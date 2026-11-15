@@ -35,7 +35,7 @@ The game is in English by default and can be switched to Thai at any time.
 <table>
   <tr>
     <td align="center" width="25%">🌱<br><b>29</b><br>crops</td>
-    <td align="center" width="25%">🎣<br><b>37</b><br>fish</td>
+    <td align="center" width="25%">🎣<br><b>43</b><br>aquatic species</td>
     <td align="center" width="25%">🥭<br><b>15</b><br>fruit trees</td>
     <td align="center" width="25%">💎<br><b>15</b><br>ores</td>
   </tr>
@@ -55,6 +55,22 @@ The game is in English by default and can be switched to Thai at any time.
 
 > Screenshots and features describe the current development build. This update publishes documentation and screenshots only; the newer gameplay implementation is not included.
 > Screenshots were retaken from the running game on 15 November 2026. Table icons use the actual in-game item artwork.
+
+## 🆕 Latest additions
+
+- A cottage-sized Fruit Research Center with a connected entrance in Sweetleaf Glade; its red-roofed neighbour now stands farther north.
+- Seven festival themes repaint the village, both markets, the ranch and NPC homes, returning to normal after the event or a storm cancellation.
+- The second field has milestone access. A secluded greenhouse protects crops from weather damage, insects and weeds, while still requiring watering.
+- Crop insects and weeds begin at level 10. Temple offerings grant Luck +3 for seven days, once every seven days, without stacking.
+- Livestock have no level/festival purchase requirements; animals and feed are costly. Dogs/cats retain their separate adoption conditions.
+
+<table><tr><td width="50%"><img src="docs/readme/research-center.webp" alt="research-center"></td><td width="50%"><img src="docs/readme/research-shop.webp" alt="research-shop"></td></tr></table>
+
+<table><tr><td width="50%"><img src="docs/readme/festival-village.webp" alt="festival-village"></td><td width="50%"><img src="docs/readme/festival-ranch.webp" alt="festival-ranch"></td></tr></table>
+
+<table><tr><td width="50%"><img src="docs/readme/festival-market.webp" alt="festival-market"></td><td width="50%"><img src="docs/readme/greenhouse.webp" alt="greenhouse"></td></tr></table>
+
+<table><tr><td width="50%"><img src="docs/readme/early-crops.webp" alt="early-crops"></td><td width="50%"><img src="docs/readme/weekly-merit.webp" alt="weekly-merit"></td></tr></table>
 
 ## 🚀 Getting started
 
@@ -155,8 +171,7 @@ Keyboard controls cover gameplay, menus, shops, pages, puzzles and fishing. Mous
 
 ### 🎣 Fishing
 
-37 fish: 20 freshwater and 17 saltwater species. Fish depend on season, time, weather and water. Use the farm pond, lake, village river, beach or Starwake Island; fishing uses a first-person minigame. Better equipment, bait and Luck help. The complete species table is below.
-The small picture at the top right of the rod slot shows the selected bait; the same pictures appear in the bag and bait shop.
+43 aquatic species: 20 freshwater and 23 saltwater. Sea catches include crabs, prawns, clams, turtles, sea urchins and squid. Shells and exceptionally rare pearls can appear on the beach each day. First-person fishing depends on habitat, season, time, weather, bait, equipment and Luck. Shipped catches are paid the next morning.
 
 <table>
   <tr>
@@ -168,9 +183,9 @@ The small picture at the top right of the rod slot shows the selected bait; the 
 
 ### 🥭 Orchard and fruit jam
 
-- 6 plots west of the farm and 15 kinds of tree, from banana, mango, longan and tangerine to durian, mangosteen and coconut. Clear the wood and rocks from a plot, plant a sapling, water it until it is grown, and it fruits in its own seasons in rounds.
-- Manure gives extra fruit. A storm knocks down half of what is hanging, so pick before it comes. A tree you no longer want can be felled.
-- Fruit can be sold, or made into jam at the stove in the dining room (the house has to be extended first): 2 fruit make 1 jar overnight, worth as much as 3 fruit.
+- Clear trees and rocks from the six western orchard plots before planting. The Fruit Research Center is now in the southwest corner of Sweetleaf Glade, with its own entrance path.
+- Fifteen sapling types unlock in seven level tiers (1–30). Prices double by tier, from ฿150 to ฿9,600. Water trees for a full in-game year before they bear fruit in their seasons.
+- Fertilizer increases fruit yield; storms can knock fruit down. The dining-room stove turns two fruit into a jar of jam overnight.
 
 <p align="center"><img src="docs/readme/journal.webp" alt="Compact farm journal with category tabs and pages" width="720"></p>
 
@@ -221,9 +236,9 @@ The morning report announces a festival 2 days ahead with what to bring, and the
 
 ### 🐕 Outfits and pets
 
-Use the wardrobe or the pet nook **inside your cottage** to change among three outfits or adopt a dog or cat. Pet it once a day, and choose whether it follows you or waits at home. These choices have no HUD icon or global shortcut.
+Change clothes at the painted wardrobe inside the cottage. Adopt one permanent dog or cat at the Pet House beside the farm cottage after level 10 and four different festival wins. The choice cannot be changed; daily petting and following/staying home remain available.
 
-<p align="center"><img src="docs/readme/wardrobe.webp" alt="Use the painted wooden wardrobe inside the cottage" width="85%"></p>
+<p align="center"><img src="docs/readme/wardrobe.webp" alt="Wardrobe inside the cottage" width="85%"></p>
 
 ### 💾 Autosave
 
@@ -272,25 +287,25 @@ Growth counts watered days; rain can water the field for you.
 
 ### Fruit trees · 15 types
 
-Clear wood and rocks before planting. Water saplings until mature; harvest cycles apply during fruiting seasons.
+Saplings are sold at the Fruit Research Center in Sweetleaf Glade. All trees mature after 56 watered days (one in-game year).
 
-| Icon | Tree | Fruiting seasons | Days to mature | Harvest cycle/days | Fruit/cycle |
-|---|---|---|---|---|---|
-| <img src="docs/readme/icons/fruit-banana.webp" alt="" width="32" height="32"> | Namwa banana | All seasons | 6 | 5 | 2 |
-| <img src="docs/readme/icons/fruit-mango.webp" alt="" width="32" height="32"> | Nam Dok Mai mango | Summer | 10 | 3 | 3 |
-| <img src="docs/readme/icons/fruit-longan.webp" alt="" width="32" height="32"> | Longan | Autumn | 12 | 3 | 3 |
-| <img src="docs/readme/icons/fruit-orange.webp" alt="" width="32" height="32"> | Honey tangerine | Winter | 12 | 3 | 3 |
-| <img src="docs/readme/icons/fruit-lychee.webp" alt="" width="32" height="32"> | Lychee | Summer | 12 | 3 | 3 |
-| <img src="docs/readme/icons/fruit-rambutan.webp" alt="" width="32" height="32"> | Rambutan | Autumn | 12 | 3 | 3 |
-| <img src="docs/readme/icons/fruit-mangosteen.webp" alt="" width="32" height="32"> | Mangosteen | Autumn | 14 | 4 | 3 |
-| <img src="docs/readme/icons/fruit-durian.webp" alt="" width="32" height="32"> | Durian | Summer | 18 | 6 | 2 |
-| <img src="docs/readme/icons/fruit-jackfruit.webp" alt="" width="32" height="32"> | Jackfruit | Summer, Autumn | 15 | 6 | 2 |
-| <img src="docs/readme/icons/fruit-papaya.webp" alt="" width="32" height="32"> | Papaya | All seasons | 7 | 4 | 2 |
-| <img src="docs/readme/icons/fruit-coconut.webp" alt="" width="32" height="32"> | Coconut | All seasons | 14 | 6 | 2 |
-| <img src="docs/readme/icons/fruit-guava.webp" alt="" width="32" height="32"> | Guava | Winter, Spring | 9 | 3 | 3 |
-| <img src="docs/readme/icons/fruit-pomelo.webp" alt="" width="32" height="32"> | Pomelo | Winter | 14 | 5 | 2 |
-| <img src="docs/readme/icons/fruit-tamarind.webp" alt="" width="32" height="32"> | Sweet tamarind | Winter, Spring | 13 | 4 | 3 |
-| <img src="docs/readme/icons/fruit-starfruit.webp" alt="" width="32" height="32"> | Starfruit | Spring, Autumn | 10 | 3 | 3 |
+| Icon | Tree | Fruiting seasons | Days to mature | Harvest cycle/days | Fruit/cycle | Required level | Sapling price |
+|---|---|---|---|---|---|---|---|
+| <img src="docs/readme/icons/fruit-banana.webp" alt="" width="32" height="32"> | Namwa banana | All seasons | 56 | 5 | 2 | 1 | 150 |
+| <img src="docs/readme/icons/fruit-mango.webp" alt="" width="32" height="32"> | Nam Dok Mai mango | Summer | 56 | 3 | 3 | 10 | 600 |
+| <img src="docs/readme/icons/fruit-longan.webp" alt="" width="32" height="32"> | Longan | Autumn | 56 | 3 | 3 | 15 | 1200 |
+| <img src="docs/readme/icons/fruit-orange.webp" alt="" width="32" height="32"> | Honey tangerine | Winter | 56 | 3 | 3 | 10 | 600 |
+| <img src="docs/readme/icons/fruit-lychee.webp" alt="" width="32" height="32"> | Lychee | Summer | 56 | 3 | 3 | 20 | 2400 |
+| <img src="docs/readme/icons/fruit-rambutan.webp" alt="" width="32" height="32"> | Rambutan | Autumn | 56 | 3 | 3 | 15 | 1200 |
+| <img src="docs/readme/icons/fruit-mangosteen.webp" alt="" width="32" height="32"> | Mangosteen | Autumn | 56 | 4 | 3 | 30 | 9600 |
+| <img src="docs/readme/icons/fruit-durian.webp" alt="" width="32" height="32"> | Durian | Summer | 56 | 6 | 2 | 30 | 9600 |
+| <img src="docs/readme/icons/fruit-jackfruit.webp" alt="" width="32" height="32"> | Jackfruit | Summer, Autumn | 56 | 6 | 2 | 30 | 9600 |
+| <img src="docs/readme/icons/fruit-papaya.webp" alt="" width="32" height="32"> | Papaya | All seasons | 56 | 4 | 2 | 1 | 150 |
+| <img src="docs/readme/icons/fruit-coconut.webp" alt="" width="32" height="32"> | Coconut | All seasons | 56 | 6 | 2 | 25 | 4800 |
+| <img src="docs/readme/icons/fruit-guava.webp" alt="" width="32" height="32"> | Guava | Winter, Spring | 56 | 3 | 3 | 5 | 300 |
+| <img src="docs/readme/icons/fruit-pomelo.webp" alt="" width="32" height="32"> | Pomelo | Winter | 56 | 5 | 2 | 25 | 4800 |
+| <img src="docs/readme/icons/fruit-tamarind.webp" alt="" width="32" height="32"> | Sweet tamarind | Winter, Spring | 56 | 4 | 3 | 20 | 2400 |
+| <img src="docs/readme/icons/fruit-starfruit.webp" alt="" width="32" height="32"> | Starfruit | Spring, Autumn | 56 | 3 | 3 | 5 | 300 |
 
 ### Ore and gems · 15 types
 
@@ -314,12 +329,16 @@ Veins roll daily across five cave floors; deeper floors offer rarer materials. T
 | <img src="docs/readme/icons/ore-13.webp" alt="" width="32" height="32"> | Moonstone | 14 |
 | <img src="docs/readme/icons/ore-14.webp" alt="" width="32" height="32"> | Diamond | 15 |
 
-### Fish · 37 species
+### Aquatic species · 43 types
 
-20 freshwater and 17 saltwater species. Farm ponds accept pond species; lakes and rivers accept all freshwater species. Three saltwater species are exclusive to Starwake Island after its bridge is built.
-
-| Icon | Species | Fishing locations | Seasons | Hours | Sale price/fish |
+| Icon | Species | Water | Seasons | Time | Sale price |
 |---|---|---|---|---|---|
+| <img src="docs/readme/icons/fish-seaCrab.webp" alt="" width="32" height="32"> | Mud crab | Beach / island sea | All seasons | 00:00–24:00 | 72 |
+| <img src="docs/readme/icons/fish-seaPrawn.webp" alt="" width="32" height="32"> | Tiger prawn | Beach / island sea | All seasons | 00:00–24:00 | 68 |
+| <img src="docs/readme/icons/fish-seaClam.webp" alt="" width="32" height="32"> | Sea clam | Beach / island sea | All seasons | 00:00–24:00 | 90 |
+| <img src="docs/readme/icons/fish-seaTurtle.webp" alt="" width="32" height="32"> | Green sea turtle | Beach / island sea | All seasons | 00:00–24:00 | 500 |
+| <img src="docs/readme/icons/fish-seaUrchin.webp" alt="" width="32" height="32"> | Sea urchin | Beach / island sea | All seasons | 00:00–24:00 | 110 |
+| <img src="docs/readme/icons/fish-squid.webp" alt="" width="32" height="32"> | Reef squid | Beach / island sea | All seasons | 00:00–24:00 | 125 |
 | <img src="docs/readme/icons/fish-coralTrout.webp" alt="" width="32" height="32"> | Coral trout | Island sea only | All seasons | 06:00–18:00 | 260 |
 | <img src="docs/readme/icons/fish-cobia.webp" alt="" width="32" height="32"> | Cobia | Island sea only | Summer, Autumn, Spring | 00:00–24:00 | 300 |
 | <img src="docs/readme/icons/fish-giantTrevally.webp" alt="" width="32" height="32"> | Giant trevally | Island sea only | All seasons | 16:00–24:00 * | 360 |
@@ -358,7 +377,7 @@ Veins roll daily across five cave floors; deeper floors offer rarer materials. T
 | <img src="docs/readme/icons/fish-swordfish.webp" alt="" width="32" height="32"> | Swordfish | Beach / island sea | Autumn, Winter | 08:00–22:00 * | 200 |
 | <img src="docs/readme/icons/fish-sailfish.webp" alt="" width="32" height="32"> | Sailfish | Beach / island sea | Summer, Autumn, Spring | 16:00–24:00 | 235 |
 
-\* When the weather is wet, these fish may bite outside their normal hours, but still only in their listed seasons and locations. Ship catches for payment next morning, or sell eligible goods at your fresh-market stall.
+\* Marked species are available all day in wet weather, within their habitat and season.
 
 ### Equipment and tools
 
@@ -422,9 +441,9 @@ These are 17 game-development skills chosen from
 for Claude Code to use while developing this game. They play no part when the game runs. They are under the Apache-2.0 licence
 (`LICENSE` and `NOTICE` are in that folder) and can be deleted without affecting the game.
 
-## 📜 Licence
+## ⚖️ Licensing
 
-No licence has been chosen for the game itself yet.
+The project code, artwork and audio are reserved; no reuse license is granted for first-party material. See [LICENSE](LICENSE). Copyright and license texts for 39 installed npm packages and the vendored development skills are preserved in [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md). Phaser and eventemitter3 use MIT; development components also include Apache-2.0, MPL-2.0, ISC and BSD-3-Clause.
 
 ---
 

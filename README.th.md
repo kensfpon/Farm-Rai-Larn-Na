@@ -35,7 +35,7 @@
 <table>
   <tr>
     <td align="center" width="25%">🌱<br><b>29</b><br>ชนิดพืช</td>
-    <td align="center" width="25%">🎣<br><b>37</b><br>ชนิดปลา</td>
+    <td align="center" width="25%">🎣<br><b>43</b><br>ชนิดสัตว์น้ำ</td>
     <td align="center" width="25%">🥭<br><b>15</b><br>ชนิดไม้ผล</td>
     <td align="center" width="25%">💎<br><b>15</b><br>ชนิดแร่</td>
   </tr>
@@ -55,6 +55,22 @@
 
 > ภาพและฟีเจอร์อ้างอิงรุ่นพัฒนาปัจจุบัน การอัปเดตครั้งนี้เผยแพร่เฉพาะเอกสารและภาพประกอบ โค้ดเกมรุ่นใหม่ยังไม่ถูกรวม
 > ภาพหน้าจอถ่ายใหม่จากเกมที่รันอยู่เมื่อ 15 พฤศจิกายน 2026 ไอคอนในตารางใช้รูปไอเทมจากเกมจริง
+
+## 🆕 ส่วนที่เพิ่มล่าสุด
+
+- ศูนย์วิจัยผลไม้ขนาดใกล้เคียงบ้านชาวบ้านพร้อมถนนทางเข้าในป่าผักหวาน บ้านหลังคาแดงเลื่อนขึ้นด้านบน
+- ภาพเทศกาล7ธีมเปลี่ยนทั้งหมู่บ้าน ตลาด ตลาดสด ปศุสัตว์และบ้าน NPC กลับเป็นฉากปกติเมื่อหมดงานหรือมีพายุ
+- แปลงสองมีความสำเร็จสำหรับปลดล็อก และมีโรงเรือนลับที่ป้องกันฝนเสียหาย แมลง และวัชพืช แต่ยังต้องรดน้ำ
+- แมลงและวัชพืชเริ่มเมื่อเลเวล 10 ทำบุญถวายผลผลิตได้ทุก 7 วัน รับโชค +3 นาน 7 วันและไม่ซ้อนทับกัน
+- ปศุสัตว์ไม่มีเงื่อนไขเลเวลหรือเทศกาลในการซื้อ แต่สัตว์และอาหารราคาแพง สุนัข/แมวใช้เงื่อนไขรับเลี้ยงแยกต่างหาก
+
+<table><tr><td width="50%"><img src="docs/readme/research-center-th.webp" alt="research-center"></td><td width="50%"><img src="docs/readme/research-shop-th.webp" alt="research-shop"></td></tr></table>
+
+<table><tr><td width="50%"><img src="docs/readme/festival-village-th.webp" alt="festival-village"></td><td width="50%"><img src="docs/readme/festival-ranch-th.webp" alt="festival-ranch"></td></tr></table>
+
+<table><tr><td width="50%"><img src="docs/readme/festival-market-th.webp" alt="festival-market"></td><td width="50%"><img src="docs/readme/greenhouse-th.webp" alt="greenhouse"></td></tr></table>
+
+<table><tr><td width="50%"><img src="docs/readme/early-crops-th.webp" alt="early-crops"></td><td width="50%"><img src="docs/readme/weekly-merit-th.webp" alt="weekly-merit"></td></tr></table>
 
 ## 🚀 เริ่มเล่น
 
@@ -157,7 +173,7 @@ npm run dev
 
 ### 🎣 ตกปลา
 
-ปลา 37 ชนิด แยกน้ำจืด 20 และน้ำเค็ม 17 พบตามฤดู เวลา อากาศ และแหล่งน้ำ ตกได้ที่บ่อฟาร์ม สระ แม่น้ำ ชายหาด และเกาะรอยดาว ใช้มินิเกมมุมมองบุคคลที่หนึ่ง เบ็ดและเหยื่อที่ดีขึ้นช่วยให้ตกปลาหายากได้มากขึ้น ดูข้อมูลครบในตารางด้านล่าง
+สัตว์น้ำ 43 ชนิด แยกน้ำจืด 20 และน้ำเค็ม 23 รวมปู กุ้ง หอย เต่า เม่นทะเล และหมึก ชายหาดสุ่มเกิดเปลือกหอยและไข่มุกที่หายากมากประจำวัน ตกปลาแบบมุมมองบุคคลที่หนึ่งตามแหล่งน้ำ ฤดู เวลา อากาศ เหยื่อ อุปกรณ์ และโชค นำสัตว์น้ำเข้าลังส่งของเพื่อรับเงินเช้าวันถัดไป
 
 <table>
   <tr>
@@ -167,11 +183,11 @@ npm run dev
   <tr><td align="center">ตกปลาและแสดงปลาที่จับได้</td><td align="center">บ้านและกิจกรรมของชาวบ้านในป่า</td></tr>
 </table>
 
-### 🥭 สวนผลไม้และแยมผลไม้
+### 🥭 สวนผลไม้และแยม
 
-- 6 แปลงทางตะวันตกของฟาร์ม ต้นไม้ 15 ชนิด ตั้งแต่กล้วย มะม่วง ลำไย และส้ม ไปจนถึงทุเรียน มังคุด และมะพร้าว เคลียร์ไม้และหินออกจากแปลง ปลูกต้นกล้า รดน้ำจนโต แล้วจะออกผลเป็นรอบตามฤดูของมัน
-- ปุ๋ยคอกทำให้ได้ผลเพิ่ม พายุทำให้ผลที่ติดอยู่ร่วงครึ่งหนึ่ง จึงควรเก็บก่อนพายุมา ต้นที่ไม่ต้องการแล้วโค่นทิ้งได้
-- ผลไม้ขายได้ หรือทำแยมที่เตาในห้องอาหาร (ต้องต่อเติมบ้านก่อน): ผลไม้ 2 ผลได้แยม 1 ขวดในข้ามคืน มีค่าเท่าผลไม้ 3 ผล
+- ถางต้นไม้และหินในสวนด้านตะวันตก 6 หลุมก่อนปลูก ศูนย์วิจัยผลไม้ย้ายมาอยู่มุมล่างซ้ายของป่าผักหวาน พร้อมถนนเข้าถึงหน้าศูนย์
+- กิ่งพันธุ์ 15 ชนิดปลดล็อกเป็น 7 รุ่นตามเลเวล 1–30 ราคาเพิ่มเท่าตัวตามรุ่น ตั้งแต่ 150 ถึง 9,600 บาท รดน้ำครบหนึ่งปีในเกมจึงโตและออกผลตามฤดู
+- ปุ๋ยเพิ่มผลผลิต พายุอาจทำผลไม้ร่วง เตาในห้องกินข้าวแปรรูปผลไม้ 2 ชิ้นเป็นแยม 1 กระปุกข้ามคืน
 
 <p align="center"><img src="docs/readme/journal-th.webp" alt="สมุดฟาร์มแบบกะทัดรัด แบ่งแท็บและเปลี่ยนหน้า" width="720"></p>
 
@@ -222,9 +238,9 @@ npm run dev
 
 ### 🐕 ชุดและสัตว์เลี้ยง
 
-ไปใช้ตู้เสื้อผ้าหรือมุมสัตว์เลี้ยงภายในบ้านเพื่อเลือกชุด 3 ชุด และรับเลี้ยงหมาหรือแมว 1 ตัว ลูบหัวได้วันละครั้ง เลือกให้เดินตามหรือรอที่บ้านได้ ไม่มีไอคอนติดตัวหรือคีย์ลัดเปิดจากนอกบ้าน
+เปลี่ยนชุดที่ตู้เสื้อผ้าในบ้าน เลือกสุนัขหรือแมวที่บ้านสัตว์ข้างบ้านเมื่อเลเวล 10และชนะ 4 เทศกาลต่างกัน เลือกได้ครั้งเดียวและเปลี่ยนไม่ได้ ลูบหัวได้ทุกวันและเลือกให้เดินตามหรือรอที่บ้านได้
 
-<p align="center"><img src="docs/readme/wardrobe-th.webp" alt="ใช้ตู้ไม้ภายในบ้านเพื่อแต่งตัว" width="85%"></p>
+<p align="center"><img src="docs/readme/wardrobe-th.webp" alt="ตู้เสื้อผ้าภายในบ้าน" width="85%"></p>
 
 ### 💾 บันทึกอัตโนมัติ
 
@@ -273,25 +289,25 @@ npm run dev
 
 ### ไม้ผล · 15 ชนิด
 
-ตัดไม้และทุบหินก่อนปลูก รดน้ำต้นอ่อนจนโต รอบเก็บเกี่ยวใช้เฉพาะฤดูที่ออกผล
+ซื้อกิ่งพันธุ์ที่ศูนย์วิจัยผลไม้ในป่าผักหวาน ไม้ผลทุกชนิดโตหลังได้รับน้ำ 56 วัน หรือหนึ่งปีในเกม
 
-| ภาพ | ชนิด | ฤดูออกผล | วันโตจากต้นอ่อน | รอบเก็บ/วัน | ผล/รอบ |
-|---|---|---|---|---|---|
-| <img src="docs/readme/icons/fruit-banana.webp" alt="" width="32" height="32"> | กล้วยน้ำว้า | ทุกฤดู | 6 | 5 | 2 |
-| <img src="docs/readme/icons/fruit-mango.webp" alt="" width="32" height="32"> | มะม่วงน้ำดอกไม้ | ฤดูร้อน | 10 | 3 | 3 |
-| <img src="docs/readme/icons/fruit-longan.webp" alt="" width="32" height="32"> | ลำไย | ใบไม้ร่วง | 12 | 3 | 3 |
-| <img src="docs/readme/icons/fruit-orange.webp" alt="" width="32" height="32"> | ส้มสายน้ำผึ้ง | ฤดูหนาว | 12 | 3 | 3 |
-| <img src="docs/readme/icons/fruit-lychee.webp" alt="" width="32" height="32"> | ลิ้นจี่ | ฤดูร้อน | 12 | 3 | 3 |
-| <img src="docs/readme/icons/fruit-rambutan.webp" alt="" width="32" height="32"> | เงาะ | ใบไม้ร่วง | 12 | 3 | 3 |
-| <img src="docs/readme/icons/fruit-mangosteen.webp" alt="" width="32" height="32"> | มังคุด | ใบไม้ร่วง | 14 | 4 | 3 |
-| <img src="docs/readme/icons/fruit-durian.webp" alt="" width="32" height="32"> | ทุเรียน | ฤดูร้อน | 18 | 6 | 2 |
-| <img src="docs/readme/icons/fruit-jackfruit.webp" alt="" width="32" height="32"> | ขนุน | ฤดูร้อน, ใบไม้ร่วง | 15 | 6 | 2 |
-| <img src="docs/readme/icons/fruit-papaya.webp" alt="" width="32" height="32"> | มะละกอ | ทุกฤดู | 7 | 4 | 2 |
-| <img src="docs/readme/icons/fruit-coconut.webp" alt="" width="32" height="32"> | มะพร้าว | ทุกฤดู | 14 | 6 | 2 |
-| <img src="docs/readme/icons/fruit-guava.webp" alt="" width="32" height="32"> | ฝรั่ง | ฤดูหนาว, ใบไม้ผลิ | 9 | 3 | 3 |
-| <img src="docs/readme/icons/fruit-pomelo.webp" alt="" width="32" height="32"> | ส้มโอ | ฤดูหนาว | 14 | 5 | 2 |
-| <img src="docs/readme/icons/fruit-tamarind.webp" alt="" width="32" height="32"> | มะขามหวาน | ฤดูหนาว, ใบไม้ผลิ | 13 | 4 | 3 |
-| <img src="docs/readme/icons/fruit-starfruit.webp" alt="" width="32" height="32"> | มะเฟือง | ใบไม้ผลิ, ใบไม้ร่วง | 10 | 3 | 3 |
+| ไอคอน | ชนิด | ฤดูออกผล | วันโต | รอบเก็บ/วัน | ผล/รอบ | เลเวลที่ซื้อได้ | ราคากิ่งพันธุ์ |
+|---|---|---|---|---|---|---|---|
+| <img src="docs/readme/icons/fruit-banana.webp" alt="" width="32" height="32"> | กล้วยน้ำว้า | ทุกฤดู | 56 | 5 | 2 | 1 | 150 |
+| <img src="docs/readme/icons/fruit-mango.webp" alt="" width="32" height="32"> | มะม่วงน้ำดอกไม้ | ฤดูร้อน | 56 | 3 | 3 | 10 | 600 |
+| <img src="docs/readme/icons/fruit-longan.webp" alt="" width="32" height="32"> | ลำไย | ใบไม้ร่วง | 56 | 3 | 3 | 15 | 1200 |
+| <img src="docs/readme/icons/fruit-orange.webp" alt="" width="32" height="32"> | ส้มสายน้ำผึ้ง | ฤดูหนาว | 56 | 3 | 3 | 10 | 600 |
+| <img src="docs/readme/icons/fruit-lychee.webp" alt="" width="32" height="32"> | ลิ้นจี่ | ฤดูร้อน | 56 | 3 | 3 | 20 | 2400 |
+| <img src="docs/readme/icons/fruit-rambutan.webp" alt="" width="32" height="32"> | เงาะ | ใบไม้ร่วง | 56 | 3 | 3 | 15 | 1200 |
+| <img src="docs/readme/icons/fruit-mangosteen.webp" alt="" width="32" height="32"> | มังคุด | ใบไม้ร่วง | 56 | 4 | 3 | 30 | 9600 |
+| <img src="docs/readme/icons/fruit-durian.webp" alt="" width="32" height="32"> | ทุเรียน | ฤดูร้อน | 56 | 6 | 2 | 30 | 9600 |
+| <img src="docs/readme/icons/fruit-jackfruit.webp" alt="" width="32" height="32"> | ขนุน | ฤดูร้อน, ใบไม้ร่วง | 56 | 6 | 2 | 30 | 9600 |
+| <img src="docs/readme/icons/fruit-papaya.webp" alt="" width="32" height="32"> | มะละกอ | ทุกฤดู | 56 | 4 | 2 | 1 | 150 |
+| <img src="docs/readme/icons/fruit-coconut.webp" alt="" width="32" height="32"> | มะพร้าว | ทุกฤดู | 56 | 6 | 2 | 25 | 4800 |
+| <img src="docs/readme/icons/fruit-guava.webp" alt="" width="32" height="32"> | ฝรั่ง | ฤดูหนาว, ใบไม้ผลิ | 56 | 3 | 3 | 5 | 300 |
+| <img src="docs/readme/icons/fruit-pomelo.webp" alt="" width="32" height="32"> | ส้มโอ | ฤดูหนาว | 56 | 5 | 2 | 25 | 4800 |
+| <img src="docs/readme/icons/fruit-tamarind.webp" alt="" width="32" height="32"> | มะขามหวาน | ฤดูหนาว, ใบไม้ผลิ | 56 | 4 | 3 | 20 | 2400 |
+| <img src="docs/readme/icons/fruit-starfruit.webp" alt="" width="32" height="32"> | มะเฟือง | ใบไม้ผลิ, ใบไม้ร่วง | 56 | 3 | 3 | 5 | 300 |
 
 ### แร่และอัญมณี · 15 ชนิด
 
@@ -315,12 +331,16 @@ npm run dev
 | <img src="docs/readme/icons/ore-13.webp" alt="" width="32" height="32"> | มุกดาหาร | 14 |
 | <img src="docs/readme/icons/ore-14.webp" alt="" width="32" height="32"> | เพชร | 15 |
 
-### ปลา · 37 ชนิด
+### สัตว์น้ำ · 43 ชนิด
 
-ปลาน้ำจืด 20 ชนิด และน้ำเค็ม 17 ชนิด บ่อฟาร์มมีปลากลุ่มบ่อ ส่วนสระและแม่น้ำมีปลาน้ำจืดทั้งหมด ปลาน้ำเค็ม 3 ชนิดพบเฉพาะเกาะรอยดาวหลังสร้างสะพาน
-
-| ภาพ | ชนิด | สถานที่ | ฤดู | เวลา | ราคาขาย/ตัว |
+| ไอคอน | ชนิด | แหล่งน้ำ | ฤดู | เวลา | ราคาขาย |
 |---|---|---|---|---|---|
+| <img src="docs/readme/icons/fish-seaCrab.webp" alt="" width="32" height="32"> | ปูทะเล | ชายหาด / ทะเลที่เกาะ | ทุกฤดู | 00:00–24:00 | 72 |
+| <img src="docs/readme/icons/fish-seaPrawn.webp" alt="" width="32" height="32"> | กุ้งกุลาดำ | ชายหาด / ทะเลที่เกาะ | ทุกฤดู | 00:00–24:00 | 68 |
+| <img src="docs/readme/icons/fish-seaClam.webp" alt="" width="32" height="32"> | หอยทะเล | ชายหาด / ทะเลที่เกาะ | ทุกฤดู | 00:00–24:00 | 90 |
+| <img src="docs/readme/icons/fish-seaTurtle.webp" alt="" width="32" height="32"> | เต่าทะเล | ชายหาด / ทะเลที่เกาะ | ทุกฤดู | 00:00–24:00 | 500 |
+| <img src="docs/readme/icons/fish-seaUrchin.webp" alt="" width="32" height="32"> | เม่นทะเล | ชายหาด / ทะเลที่เกาะ | ทุกฤดู | 00:00–24:00 | 110 |
+| <img src="docs/readme/icons/fish-squid.webp" alt="" width="32" height="32"> | หมึกทะเล | ชายหาด / ทะเลที่เกาะ | ทุกฤดู | 00:00–24:00 | 125 |
 | <img src="docs/readme/icons/fish-coralTrout.webp" alt="" width="32" height="32"> | ปลากะรังจุดฟ้า | ทะเลที่เกาะเท่านั้น | ทุกฤดู | 06:00–18:00 | 260 |
 | <img src="docs/readme/icons/fish-cobia.webp" alt="" width="32" height="32"> | ปลาช่อนทะเล | ทะเลที่เกาะเท่านั้น | ฤดูร้อน, ใบไม้ร่วง, ใบไม้ผลิ | 00:00–24:00 | 300 |
 | <img src="docs/readme/icons/fish-giantTrevally.webp" alt="" width="32" height="32"> | ปลากะมงพร้าว | ทะเลที่เกาะเท่านั้น | ทุกฤดู | 16:00–24:00 * | 360 |
@@ -359,7 +379,7 @@ npm run dev
 | <img src="docs/readme/icons/fish-swordfish.webp" alt="" width="32" height="32"> | ปลากระโทงดาบ | ชายหาด / ทะเลที่เกาะ | ใบไม้ร่วง, ฤดูหนาว | 08:00–22:00 * | 200 |
 | <img src="docs/readme/icons/fish-sailfish.webp" alt="" width="32" height="32"> | ปลากระโทงร่ม | ชายหาด / ทะเลที่เกาะ | ฤดูร้อน, ใบไม้ร่วง, ใบไม้ผลิ | 16:00–24:00 | 235 |
 
-\* เมื่ออากาศเปียก ปลาเหล่านี้มีโอกาสกินเหยื่อนอกเวลาปกติ แต่ยังต้องตรงฤดูและสถานที่ นำปลาใส่ลังส่งของเพื่อรับเงินเช้าวันถัดไป หรือขายของที่รองรับได้ที่แผงตลาดสด
+\* ชนิดที่มีเครื่องหมายนี้พบได้ตลอดวันเมื่ออากาศเปียกชื้น แต่ยังต้องตรงฤดูและแหล่งน้ำ
 
 ### อุปกรณ์และเครื่องมือ
 
@@ -423,9 +443,9 @@ npm run dev
 สำหรับให้ Claude Code ใช้ระหว่างพัฒนาเกมนี้ ไม่มีส่วนเกี่ยวข้องตอนเกมทำงาน อยู่ภายใต้สัญญาอนุญาต Apache-2.0
 (`LICENSE` และ `NOTICE` อยู่ในโฟลเดอร์นั้น) และลบทิ้งได้โดยไม่กระทบเกม
 
-## 📜 สัญญาอนุญาต
+## ⚖️ ใบอนุญาต
 
-ยังไม่ได้เลือกสัญญาอนุญาตสำหรับตัวเกม
+สงวนสิทธิ์โค้ด ภาพ และเสียงของเกม ไม่ได้อนุญาตให้นำเนื้อหาของเกมไปใช้ต่อ ดู [LICENSE](LICENSE) เก็บข้อความลิขสิทธิ์และใบอนุญาตของแพ็กเกจ npm ที่ติดตั้ง 39 รายการ รวมถึงชุดสกิลพัฒนาเกมที่อยู่ใน repo ไว้ใน [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md) Phaser และ eventemitter3 ใช้ MIT ส่วนเครื่องมือพัฒนายังมี Apache-2.0, MPL-2.0, ISC และ BSD-3-Clause
 
 ---
 
