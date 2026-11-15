@@ -36,13 +36,13 @@ The game is in English by default and can be switched to Thai at any time.
   <tr>
     <td align="center" width="25%">🌱<br><b>29</b><br>crops</td>
     <td align="center" width="25%">🎣<br><b>34</b><br>fish</td>
-    <td align="center" width="25%">🥭<br><b>4</b><br>fruit trees</td>
-    <td align="center" width="25%">💎<br><b>5</b><br>ores</td>
+    <td align="center" width="25%">🥭<br><b>15</b><br>fruit trees</td>
+    <td align="center" width="25%">💎<br><b>15</b><br>ores</td>
   </tr>
   <tr>
-    <td align="center" width="25%">🐄<br><b>4</b><br>ranch animals</td>
+    <td align="center" width="25%">🐄<br><b>15</b><br>ranch animals</td>
     <td align="center" width="25%">🏮<br><b>7</b><br>festivals a year</td>
-    <td align="center" width="25%">👥<br><b>22</b><br>villagers</td>
+    <td align="center" width="25%">👥<br><b>34</b><br>villagers</td>
     <td align="center" width="25%">🌦️<br><b>4 · 5</b><br>seasons · kinds of weather</td>
   </tr>
 </table>
@@ -127,6 +127,9 @@ A higher level lets you stay up later and gives you more energy.
 Every place is its own painted map. Walk off the edge along a road, or through a doorway, and you arrive on the matching road of the next map.
 The travel map (M) walks you there automatically, through each place on the way.
 
+The roads form loops, so few places are dead ends: the ranch and the Frontier Meadow both lead down to Pearl Bay Beach, and the orchard
+links to Bua Kaew Lake and Sweetleaf Glade. A road leaves one map and enters the next at the same spot on the shared edge.
+
 <table>
   <tr>
     <td width="50%"><img src="docs/readme/travel.webp" alt="The travel map with a route to each place"></td>
@@ -158,6 +161,8 @@ play-tested by touch on a real phone yet, and it cannot be installed as an app (
 - **4 seasons.** Summer → autumn → winter → spring, 14 days each (56 days a year). Crops that cannot stand the new season wither, and the game warns you 3 days ahead.
 - **5 kinds of weather.** Sunny, rain, heatwave, storm and snow, always with a forecast for tomorrow. Rain waters the field for you, a storm can wilt plants and a heatwave makes every job more tiring.
 - **Day and night.** The sky darkens with the clock and the lamps you have placed light up after dark.
+- **Refill the watering can.** A fill waters 10 times (20 with the copper can). The blue bar below the can shows its water level. Select the can at the farm pond, lake or shore to refill it.
+- **Picture inventory.** The bag is a compact window of small picture cells. Use category tabs and Previous/Next buttons to browse items without vertical scrolling. Start with 15 slots, one per kind of item. Existing stacks still accept more when the bag is full. Tonkla sells 10 more slots per upgrade, up to 150; the final upgrade adds 5. Prices double from ฿200 to ฿1,638,400 on the fourteenth purchase.
 
 <table>
   <tr>
@@ -175,6 +180,7 @@ play-tested by touch on a real phone yet, and it cannot be installed as an app (
 34 fish (20 freshwater, 14 saltwater) that appear by season, time of day, weather and water. There are three places to fish: the farm pond,
 Bua Kaew Lake and Pearl Bay Beach. Fishing is seen through your own eyes: wait for the bite, then press when the needle is inside the green band.
 Each fish has a wider or narrower band, a better rod widens it, four kinds of bait raise the odds of rare fish, and Luck helps too.
+The small picture at the top right of the rod slot shows the selected bait; the same pictures appear in the bag and bait shop.
 
 <table>
   <tr>
@@ -189,7 +195,7 @@ Each fish has a wider or narrower band, a better rod widens it, four kinds of ba
 
 ### 🥭 Orchard and fruit jam
 
-- 6 plots west of the farm and 4 kinds of tree: banana, mango, longan and tangerine. Clear the wood and rocks from a plot, plant a sapling, water it until it is grown, and it fruits in its own seasons in rounds.
+- 6 plots west of the farm and 15 kinds of tree, from banana, mango, longan and tangerine to durian, mangosteen and coconut. Clear the wood and rocks from a plot, plant a sapling, water it until it is grown, and it fruits in its own seasons in rounds.
 - Manure gives extra fruit. A storm knocks down half of what is hanging, so pick before it comes. A tree you no longer want can be felled.
 - Fruit can be sold, or made into jam at the stove in the dining room (the house has to be extended first): 2 fruit make 1 jar overnight, worth as much as 3 fruit.
 
@@ -199,11 +205,12 @@ Each fish has a wider or narrower band, a better rod widens it, four kinds of ba
 
 ### ⛏️ Mining, levels and tools
 
-- **Star Stone Cave.** Each vein may or may not be there on a given day and is spent once mined. 5 ores (copper, iron, silver, gold, star crystal), dug with the pickaxe, with a bonus ore of the next kind depending on Luck.
+- **Star Stone Cave.** Five floors, with rarer ore deeper down. Buy a rope ladder from the smith or earn one through an ore request to descend. Each vein may or may not be there on a given day and is spent once mined. 15 ores (copper, iron, silver, gold, star crystal, then quartz, jade, amethyst, garnet, topaz, sapphire, emerald, ruby, moonstone and diamond), dug with the pickaxe, with a bonus ore of the next kind depending on Luck.
 - **Frontier Meadow.** Open new farmland by clearing grass, trees and rocks, then till and plant it. Later plots need better tools.
 - **Levels and stats.** Work earns XP. Each level gives points for Strength, Stamina and Luck, more energy and a later bedtime.
 - **Blacksmith.** Trade ore to upgrade the hoe, axe and pickaxe, and buy lamps to place along the paths.
 - **Village quests.** Rewards for clearing land, mining and fishing.
+- **Hidden carvings and seals.** Explore five shrines; their stones and interaction hints appear as you approach. Solve puzzles or win festival trophies to earn seals that unlock rare seeds, saplings, animals, bait, rods and higher tool upgrades. The first three shrine seals also open the forest cache.
 
 <table>
   <tr>
@@ -226,7 +233,7 @@ Each fish has a wider or narrower band, a better rod widens it, four kinds of ba
 
 ### 🐄 Ranch animals
 
-Hens, ducks, cows and sheep live at the Livestock Ranch. Buy animals, feed each one a portion a day, and the produce (eggs, milk, wool) is in your bag next morning.
+15 kinds of animal live at the Livestock Ranch, including hens, ducks, cows, sheep, goats, buffalo and peafowl. Buy animals, feed each one a portion a day, and their produce is in your bag next morning.
 You can also have a chicken coop built on your own farm.
 
 <p align="center">
@@ -236,11 +243,13 @@ You can also have a chicken coop built on your own farm.
 ### 🏘️ Village, markets and neighbours
 
 - **Wiang Kham Village.** Mali and Uncle Chai have friendship levels, take gifts and have a daily request. Uncle Chai also sells new farm plots, extends the house as you level up and builds the chicken coop.
-- **Villagers on the move.** 22 named residents walk their own daily routes, some of them along the roads between maps. Walk up and press E to say hello. During a festival they all gather in the village square.
+- **Villagers with homes.** 22 roaming residents and 12 named workers share eight private cottages across the village, forest, glade and ranch. They walk home after work, sleep at night, and leave in the morning. Cottages show their occupants with E; players stay outside. Shopkeepers leave their counters too. Late festivals keep visitors in the square until closing. The private estate has no villagers.
+- **A village river.** Cross the wooden bridge between banks, fish for freshwater species from the landing, or follow the southern road to the river estuary at the beach. River fishing has its own first-person background and the current ripples downstream.
 - **Notice board.** Take one delivery job a day (vegetables for Mali's kitchen or fruit for Uncle Chai) for money and friendship.
 - **Wiang Kham Market.** The seed shop, a food stall, the blacksmith and a trader who buys your goods.
+- **Shop windows.** Meet the keeper beside a painted awning and illustrated wares. Category tabs and numbered pages keep controls on screen, including on smaller displays. Locked cards show the seals needed. Mali, Uncle Chai and the fruit nursery use the same layout. Buying prices have increased by 50%; selling prices are unchanged.
 - **Growers' Fresh Market.** Open your own stall (07:00–18:00): choose an item, a quantity and a price. Customers buy according to their budget, the money comes at once, and festival days bring more of them.
-- **Wiang Kham Clinic.** Where you recover when your energy runs out, for a fee of ฿60.
+- **Wiang Kham Clinic.** Recover when your energy runs out, or choose any ward bed to sleep until morning for ฿60. The farmer is shown resting in the bed.
 - **Sweetleaf Glade and Bamboo Forest.** Gather fiddlehead ferns, wild mulberries and wild bananas in the glade (they grow back in a few days), and herbs and bamboo in the forest.
 
 <table>
@@ -304,9 +313,12 @@ If you close the game in the middle of a day, that day's work is lost, so go to 
 - [x] Fishing (first-person view, bait)
 - [x] ~~Rice paddy~~ removed; land expansion and the Frontier Meadow replace it
 - [x] Orchard (with fruit jam)
-- [x] Animals (hens, ducks, cows, sheep)
+- [x] 15 ranch animals
 - [x] Village, neighbours, festivals (with the fresh-market stall and the calendar)
 - [x] Mining, levels, tools and wild food
+- [x] Expandable picture inventory, hidden shrine puzzles and seal-locked shops
+- [x] Separate scenery objects and matching ground art on nine outdoor maps
+- [x] Connected roads: loop routes between maps, with road ends that line up on both sides
 - [x] English and Thai
 - [ ] Lanna art and sound: mostly done
 
