@@ -18,7 +18,7 @@
 
 **English** · [ภาษาไทย](README.th.md)
 
-[🚀 Getting started](#-getting-started) · [🎮 How to play](#-how-to-play) · [✨ What is in the game](#-what-is-in-the-game) · [🚧 Roadmap](#-roadmap)
+[🚀 Getting started](#-getting-started) · [🎮 How to play](#-how-to-play) · [✨ What is in the game](#-what-is-in-the-game) · [📋 Reference tables](#-in-game-reference-tables) · [🚧 Roadmap](#-roadmap)
 
 <img src="docs/readme/farm.webp" alt="Rai Lanna Farm: the cottage, the vegetable field and the pond" width="100%">
 
@@ -35,14 +35,14 @@ The game is in English by default and can be switched to Thai at any time.
 <table>
   <tr>
     <td align="center" width="25%">🌱<br><b>29</b><br>crops</td>
-    <td align="center" width="25%">🎣<br><b>34</b><br>fish</td>
+    <td align="center" width="25%">🎣<br><b>37</b><br>fish</td>
     <td align="center" width="25%">🥭<br><b>15</b><br>fruit trees</td>
     <td align="center" width="25%">💎<br><b>15</b><br>ores</td>
   </tr>
   <tr>
     <td align="center" width="25%">🐄<br><b>15</b><br>ranch animals</td>
     <td align="center" width="25%">🏮<br><b>7</b><br>festivals a year</td>
-    <td align="center" width="25%">👥<br><b>34</b><br>villagers</td>
+    <td align="center" width="25%">👥<br><b>36</b><br>villagers</td>
     <td align="center" width="25%">🌦️<br><b>4 · 5</b><br>seasons · kinds of weather</td>
   </tr>
 </table>
@@ -53,6 +53,8 @@ The game is in English by default and can be switched to Thai at any time.
 > **Status: in development.** The main systems are playable from end to end (see [Roadmap](#-roadmap) for what is still open).
 > Every picture on this page is taken from the real game. Some were staged first (crops already planted, animals already bought) so one picture can show a whole system.
 
+> Screenshots and features describe the current development build. This update publishes documentation and screenshots only; the newer gameplay implementation is not included.
+
 ## 🚀 Getting started
 
 You need [Node.js](https://nodejs.org) and npm (tested with Node 26).
@@ -62,7 +64,7 @@ npm install
 npm run dev
 ```
 
-Then open http://localhost:5173 in your browser.
+Then open http://localhost:5173 in your browser. Choose **New farm**, name your farm, and confirm to start. **Load farm** continues your saved farm. The title screen also has settings and an exit option. Its artwork follows your computer’s local time: night 18:00–05:59, day 06:00–17:59.
 
 Other commands
 
@@ -73,7 +75,15 @@ Other commands
 | `npm run build` | Checks types, then builds the files to publish into `dist` |
 | `npm run preview` | Serves the built files |
 
-To try it on a phone on the same network, run `npm run dev -- --host` and open your computer's IP address on the phone.
+This version is for a desktop browser with a keyboard. Mouse and touch input are disabled.
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/readme/title-day.webp" alt="Daytime title screen — local computer time"></td>
+    <td width="50%"><img src="docs/readme/title-night.webp" alt="Nighttime title screen — local computer time"></td>
+  </tr>
+  <tr><td align="center">Daytime title screen — local computer time</td><td align="center">Nighttime title screen — local computer time</td></tr>
+</table>
 
 ### 🌐 Language
 
@@ -82,21 +92,7 @@ The choice is remembered by the browser.
 
 ## 🎮 How to play
 
-<p align="center">
-  <img src="docs/readme/howto.webp" alt="The game screen with numbered parts" width="100%">
-</p>
-
-| No. | What it is | How to use it |
-|:-:|---|---|
-| 1 | Main menu | Travel map · farm · farm journal · bag · calendar · outfits and pets |
-| 2 | To-do card | Suggests the next job. Press it to open the farm journal |
-| 3 | Day, season, time, money, energy | Every job costs energy. If it runs out you fall ill and wake up in the clinic |
-| 4 | Tool belt | Press 1–7 or click to choose a tool |
-| 5 | Field | Click a soil tile and the farmer walks over to use the tool: hoe tills, seed bag plants, can waters, hand harvests |
-| 6 | Villagers and signposts | Click them, or walk up and press E, to talk, shop or take a job |
-| 7 | Pond | Choose the rod (5), walk to the water and press Space. Press again when a fish bites and the needle is in the green band |
-| 8 | Your farmer | Walk with WASD or the arrow keys, or click a path |
-| 9 | How to play | Press H for the in-game guide |
+Walk beside a plot, face the desired square, then use the hoe, seed bag and watering can with Space. Navigate menus with Tab/arrows and confirm with Enter.
 
 ### ⌨️ Keys
 
@@ -108,8 +104,11 @@ The choice is remembered by the browser.
 | Q | Switch the seed in the bag |
 | E | Interact with the place or person nearby |
 | M · I · J · C · H | Travel map · bag · farm journal · calendar · how to play |
-| F2 | Start a new game (press Y to confirm) |
-| Esc | Close a window, or put the rod away |
+| F3 · F10 | Settings · toggle sound |
+| Tab / Shift+Tab · arrows · Enter | Select a menu control · navigate · confirm |
+| [ / ] · Page Up / Page Down | Change item category · previous / next page |
+| F2 | Open the new-farm naming screen |
+| Esc | Close a window, put the rod away, or open settings from the farm |
 
 ### ☀️ One day
 
@@ -125,33 +124,22 @@ A higher level lets you stay up later and gives you more energy.
 ### 🧭 Getting around
 
 Every place is its own painted map. Walk off the edge along a road, or through a doorway, and you arrive on the matching road of the next map.
-The travel map (M) walks you there automatically, through each place on the way.
+The illustrated valley map (M) shows discovered places. A scene preview is revealed only after you reach that place. The map is informational; travel by walking along roads. There is no automatic return-home system.
 
 The roads form loops, so few places are dead ends: the ranch and the Frontier Meadow both lead down to Pearl Bay Beach, and the orchard
 links to Bua Kaew Lake and Sweetleaf Glade. A road leaves one map and enters the next at the same spot on the shared edge.
 
 <table>
   <tr>
-    <td width="50%"><img src="docs/readme/travel.webp" alt="The travel map with a route to each place"></td>
-    <td width="50%"><img src="docs/readme/village.webp" alt="Wiang Kham Village with signposts to every neighbouring place"></td>
+    <td width="50%"><img src="docs/readme/travel.webp" alt="Exploration map with discovered locations"></td>
+    <td width="50%"><img src="docs/readme/village.webp" alt="Village river and larger NPC homes"></td>
   </tr>
-  <tr>
-    <td align="center">Travel map</td>
-    <td align="center">Wiang Kham Village: signposts point to each road and door</td>
-  </tr>
+  <tr><td align="center">Exploration map with discovered locations</td><td align="center">Village river and larger NPC homes</td></tr>
 </table>
 
-### 📱 On a phone
+### 🖥️ Desktop version
 
-The game takes touch (tap the ground to walk, tap a sign to use it) and every button is on screen, so no keyboard is needed.
-The scene scrolls sideways with a finger. The pictures below come from the browser's phone-screen mode (390 pixels wide); it has not been
-play-tested by touch on a real phone yet, and it cannot be installed as an app (browser only).
-
-<p align="center">
-  <img src="docs/readme/phoneFarm.webp" alt="The game on a tall phone screen" width="260">
-  &nbsp;&nbsp;
-  <img src="docs/readme/phoneBag.webp" alt="The bag window on a phone" width="260">
-</p>
+Keyboard controls cover gameplay, menus, shops, pages, puzzles and fishing. Mouse/touch are disabled; mobile support is deferred.
 
 ## ✨ What is in the game
 
@@ -164,33 +152,17 @@ play-tested by touch on a real phone yet, and it cannot be installed as an app (
 - **Refill the watering can.** A fill waters 10 times (20 with the copper can). The blue bar below the can shows its water level. Select the can at the farm pond, lake or shore to refill it.
 - **Picture inventory.** The bag is a compact window of small picture cells. Use category tabs and Previous/Next buttons to browse items without vertical scrolling. Start with 15 slots, one per kind of item. Existing stacks still accept more when the bag is full. Tonkla sells 10 more slots per upgrade, up to 150; the final upgrade adds 5. Prices double from ฿200 to ฿1,638,400 on the fourteenth purchase.
 
-<table>
-  <tr>
-    <td width="50%"><img src="docs/readme/night.webp" alt="The farm at night with the cottage lamp lit"></td>
-    <td width="50%"><img src="docs/readme/bag.webp" alt="The bag: seeds, produce, fish and village goods"></td>
-  </tr>
-  <tr>
-    <td align="center">Night on the farm</td>
-    <td align="center">The bag: seeds, produce, fish, wild food</td>
-  </tr>
-</table>
-
 ### 🎣 Fishing
 
-34 fish (20 freshwater, 14 saltwater) that appear by season, time of day, weather and water. There are three places to fish: the farm pond,
-Bua Kaew Lake and Pearl Bay Beach. Fishing is seen through your own eyes: wait for the bite, then press when the needle is inside the green band.
-Each fish has a wider or narrower band, a better rod widens it, four kinds of bait raise the odds of rare fish, and Luck helps too.
+37 fish: 20 freshwater and 17 saltwater species. Fish depend on season, time, weather and water. Use the farm pond, lake, village river, beach or Starwake Island; fishing uses a first-person minigame. Better equipment, bait and Luck help. The complete species table is below.
 The small picture at the top right of the rod slot shows the selected bait; the same pictures appear in the bag and bait shop.
 
 <table>
   <tr>
-    <td width="50%"><img src="docs/readme/lake.webp" alt="Bua Kaew Lake with its jetty, waterfall and lotus"></td>
-    <td width="50%"><img src="docs/readme/fishing.webp" alt="Holding up a snakehead that was just caught"></td>
+    <td width="50%"><img src="docs/readme/fishing.webp" alt="First-person fishing and the landed catch"></td>
+    <td width="50%"><img src="docs/readme/forest.webp" alt="Villager homes and activities in the forest"></td>
   </tr>
-  <tr>
-    <td align="center">Bua Kaew Lake</td>
-    <td align="center">Caught one</td>
-  </tr>
+  <tr><td align="center">First-person fishing and the landed catch</td><td align="center">Villager homes and activities in the forest</td></tr>
 </table>
 
 ### 🥭 Orchard and fruit jam
@@ -199,9 +171,9 @@ The small picture at the top right of the rod slot shows the selected bait; the 
 - Manure gives extra fruit. A storm knocks down half of what is hanging, so pick before it comes. A tree you no longer want can be felled.
 - Fruit can be sold, or made into jam at the stove in the dining room (the house has to be extended first): 2 fruit make 1 jar overnight, worth as much as 3 fruit.
 
-<p align="center">
-  <img src="docs/readme/orchardMap.webp" alt="The orchard with grown trees and a sapling" width="80%">
-</p>
+<p align="center"><img src="docs/readme/journal.webp" alt="Compact farm journal with category tabs and pages" width="720"></p>
+
+The compact journal separates status, quests, crops, ore, collections and notes into tabs and pages, with no vertical scrolling.
 
 ### ⛏️ Mining, levels and tools
 
@@ -212,38 +184,15 @@ The small picture at the top right of the rod slot shows the selected bait; the 
 - **Village quests.** Rewards for clearing land, mining and fishing.
 - **Hidden carvings and seals.** Explore five shrines; their stones and interaction hints appear as you approach. Solve puzzles or win festival trophies to earn seals that unlock rare seeds, saplings, animals, bait, rods and higher tool upgrades. The first three shrine seals also open the forest cache.
 
-<table>
-  <tr>
-    <td width="50%"><img src="docs/readme/mine.webp" alt="Star Stone Cave with its cart track and ore veins"></td>
-    <td width="50%"><img src="docs/readme/journal.webp" alt="The farm journal: level, XP, stat points and quests"></td>
-  </tr>
-  <tr>
-    <td align="center">Star Stone Cave</td>
-    <td align="center">Farm journal: level and stats</td>
-  </tr>
-  <tr>
-    <td width="50%"><img src="docs/readme/meadow.webp" alt="Frontier Meadow covered in grass, stumps and rocks"></td>
-    <td width="50%"><img src="docs/readme/coast.webp" alt="Pearl Bay Beach with its pier and fishing boats"></td>
-  </tr>
-  <tr>
-    <td align="center">Frontier Meadow, waiting to be cleared</td>
-    <td align="center">Pearl Bay Beach</td>
-  </tr>
-</table>
-
 ### 🐄 Ranch animals
 
 15 kinds of animal live at the Livestock Ranch, including hens, ducks, cows, sheep, goats, buffalo and peafowl. Buy animals, feed each one a portion a day, and their produce is in your bag next morning.
 You can also have a chicken coop built on your own farm.
 
-<p align="center">
-  <img src="docs/readme/ranch.webp" alt="The Livestock Ranch with cows, ducks and the ranch shop" width="80%">
-</p>
-
 ### 🏘️ Village, markets and neighbours
 
 - **Wiang Kham Village.** Mali and Uncle Chai have friendship levels, take gifts and have a daily request. Uncle Chai also sells new farm plots, extends the house as you level up and builds the chicken coop.
-- **Villagers with homes.** 22 roaming residents and 12 named workers share eight private cottages across the village, forest, glade and ranch. They walk home after work, sleep at night, and leave in the morning. Cottages show their occupants with E; players stay outside. Shopkeepers leave their counters too. Late festivals keep visitors in the square until closing. The private estate has no villagers.
+- **36 villagers with homes.** 22 roaming residents and 14 workers follow activity schedules, avoid one another and the player, head home after work and sleep at night. Eight private cottages are spread across the village, forest, glade and ranch; the temple adds a shared residence. Players stay outside, and NPCs stay out of the private farm.
 - **A village river.** Cross the wooden bridge between banks, fish for freshwater species from the landing, or follow the southern road to the river estuary at the beach. River fishing has its own first-person background and the current ripples downstream.
 - **Notice board.** Take one delivery job a day (vegetables for Mali's kitchen or fruit for Uncle Chai) for money and friendship.
 - **Wiang Kham Market.** The seed shop, a food stall, the blacksmith and a trader who buys your goods.
@@ -252,20 +201,7 @@ You can also have a chicken coop built on your own farm.
 - **Wiang Kham Clinic.** Recover when your energy runs out, or choose any ward bed to sleep until morning for ฿60. The farmer is shown resting in the bed.
 - **Sweetleaf Glade and Bamboo Forest.** Gather fiddlehead ferns, wild mulberries and wild bananas in the glade (they grow back in a few days), and herbs and bamboo in the forest.
 
-<table>
-  <tr>
-    <td width="50%"><img src="docs/readme/market.webp" alt="Wiang Kham Market: food stall, seed shop and blacksmith"></td>
-    <td width="50%"><img src="docs/readme/stall.webp" alt="Setting an item, quantity and price at your own stall"></td>
-  </tr>
-  <tr>
-    <td align="center">Wiang Kham Market</td>
-    <td align="center">Your own stall in the fresh market</td>
-  </tr>
-</table>
-
-<p align="center">
-  <img src="docs/readme/noticeboard.webp" alt="The notice board with requests from Mali and Uncle Chai" width="80%">
-</p>
+<p align="center"><img src="docs/readme/shop.webp" alt="Shop categories and pagination" width="85%"></p>
 
 ### 🏮 Seven festivals a year
 
@@ -282,29 +218,180 @@ The morning report announces a festival 2 days ahead with what to bring, and the
 | 🌾 New Rice Offering & Crop Contest | Winter, day 10 | 09:00–17:00 | The dearest item in your bag wins 4× its price |
 | 🌸 Blossom Fair | Spring, day 5 | 08:00–18:00 | 4 packs of lettuce seeds |
 
-<table>
-  <tr>
-    <td width="50%"><img src="docs/readme/festival.webp" alt="The festival window on Songkran day"></td>
-    <td width="50%"><img src="docs/readme/calendar.webp" alt="The calendar with festival days marked"></td>
-  </tr>
-  <tr>
-    <td align="center">Festival day</td>
-    <td align="center">Calendar</td>
-  </tr>
-</table>
-
 ### 🐕 Outfits and pets
 
-Three outfits to wear, and one dog or cat to adopt. Pet it once a day, and choose whether it walks with you or waits at home.
+Use the wardrobe or the pet nook **inside your cottage** to change among three outfits or adopt a dog or cat. Pet it once a day, and choose whether it follows you or waits at home. These choices have no HUD icon or global shortcut.
 
-<p align="center">
-  <img src="docs/readme/style.webp" alt="The outfits and pets window" width="80%">
-</p>
+<p align="center"><img src="docs/readme/wardrobe.webp" alt="Use the painted wooden wardrobe inside the cottage" width="85%"></p>
 
 ### 💾 Autosave
 
 The game saves into the browser (localStorage) every new morning, and older saves are upgraded to the current format automatically.
-If you close the game in the middle of a day, that day's work is lost, so go to bed first.
+You can also save from Settings or choose **Save & title** / **Exit game**, which save before stopping the session. Exit pauses the game and sound; close the browser tab to leave. Cancelling the new-farm form preserves the existing save.
+
+## 📋 In-game reference tables
+
+Values below come from the current development build. Prices use in-game baht. Rare shop items can also require seals earned from festivals or puzzles.
+
+### Crops and vegetables · 29 types
+
+Growth counts watered days; rain can water the field for you.
+
+| Crop | Growing seasons | Days | Seed price | Sale price/item |
+|---|---|---|---|---|
+| Morning glory | All seasons | 3 | 15 | 25 |
+| Yardlong bean | Summer, Autumn | 5 | 38 | 70 |
+| Watermelon | Summer | 9 | 90 | 200 |
+| Corn | Autumn | 6 | 45 | 90 |
+| Chili | Autumn | 7 | 60 | 120 |
+| Pumpkin | Autumn, Winter | 8 | 75 | 160 |
+| Cabbage | Winter | 6 | 45 | 95 |
+| Tomato | Winter | 7 | 60 | 125 |
+| Strawberry | Winter, Spring | 9 | 105 | 230 |
+| Carrot | Winter, Summer, Spring | 4 | 27 | 50 |
+| Pineapple | Summer, Autumn | 8 | 75 | 165 |
+| Eggplant | All seasons | 5 | 33 | 65 |
+| Papaya | Summer, Autumn | 7 | 57 | 110 |
+| Cucumber | Spring, Summer, Autumn | 4 | 27 | 48 |
+| Beetroot | Winter | 5 | 36 | 74 |
+| Broccoli | Winter, Autumn | 6 | 48 | 98 |
+| Melon | Summer | 8 | 82 | 175 |
+| Dragon fruit | Summer, Autumn | 9 | 93 | 195 |
+| Passion fruit | Autumn, Winter | 7 | 63 | 132 |
+| Bok choy | Winter, Spring | 3 | 18 | 32 |
+| Radish | Spring, Winter | 4 | 24 | 48 |
+| Cauliflower | Winter | 8 | 69 | 154 |
+| Shallot | Summer, Winter | 6 | 48 | 98 |
+| Garlic | Winter, Spring | 6 | 44 | 88 |
+| Asparagus | Spring, Autumn | 8 | 72 | 153 |
+| Snow pea | Spring, Winter | 5 | 38 | 72 |
+| Zucchini | Summer, Spring | 5 | 34 | 70 |
+| Bell pepper | Summer, Autumn | 7 | 57 | 119 |
+| Lettuce | Spring, Winter, Autumn | 4 | 24 | 46 |
+
+### Fruit trees · 15 types
+
+Clear wood and rocks before planting. Water saplings until mature; harvest cycles apply during fruiting seasons.
+
+| Tree | Fruiting seasons | Days to mature | Harvest cycle/days | Fruit/cycle |
+|---|---|---|---|---|
+| Namwa banana | All seasons | 6 | 5 | 2 |
+| Nam Dok Mai mango | Summer | 10 | 3 | 3 |
+| Longan | Autumn | 12 | 3 | 3 |
+| Honey tangerine | Winter | 12 | 3 | 3 |
+| Lychee | Summer | 12 | 3 | 3 |
+| Rambutan | Autumn | 12 | 3 | 3 |
+| Mangosteen | Autumn | 14 | 4 | 3 |
+| Durian | Summer | 18 | 6 | 2 |
+| Jackfruit | Summer, Autumn | 15 | 6 | 2 |
+| Papaya | All seasons | 7 | 4 | 2 |
+| Coconut | All seasons | 14 | 6 | 2 |
+| Guava | Winter, Spring | 9 | 3 | 3 |
+| Pomelo | Winter | 14 | 5 | 2 |
+| Sweet tamarind | Winter, Spring | 13 | 4 | 3 |
+| Starfruit | Spring, Autumn | 10 | 3 | 3 |
+
+### Ore and gems · 15 types
+
+Veins roll daily across five cave floors; deeper floors offer rarer materials. These are the pickaxe levels required to mine each type directly.
+
+| Ore / gem | Minimum pickaxe level |
+|---|---|
+| Copper | 1 |
+| Iron | 2 |
+| Silver | 3 |
+| Gold | 4 |
+| Star crystal | 5 |
+| Quartz | 6 |
+| Jade | 7 |
+| Amethyst | 8 |
+| Garnet | 9 |
+| Topaz | 10 |
+| Sapphire | 11 |
+| Emerald | 12 |
+| Ruby | 13 |
+| Moonstone | 14 |
+| Diamond | 15 |
+
+### Fish · 37 species
+
+20 freshwater and 17 saltwater species. Farm ponds accept pond species; lakes and rivers accept all freshwater species. Three saltwater species are exclusive to Starwake Island after its bridge is built.
+
+| Species | Fishing locations | Seasons | Hours | Sale price/fish |
+|---|---|---|---|---|
+| Coral trout | Island sea only | All seasons | 06:00–18:00 | 260 |
+| Cobia | Island sea only | Summer, Autumn, Spring | 00:00–24:00 | 300 |
+| Giant trevally | Island sea only | All seasons | 16:00–24:00 * | 360 |
+| Nile tilapia | Farm pond / lake / river | All seasons | 00:00–24:00 | 12 |
+| Silver barb | Farm pond / lake / river | Summer, Autumn | 06:00–18:00 | 18 |
+| Snakeskin gourami | Farm pond / lake / river | Winter | 06:00–18:00 | 20 |
+| Climbing perch | Farm pond / lake / river | Autumn | 00:00–24:00 | 25 |
+| Catfish | Farm pond / lake / river | Summer, Autumn | 18:00–24:00 * | 35 |
+| Snakehead | Farm pond / lake / river | All seasons | 06:00–10:00 | 60 |
+| Featherback | Farm pond / lake / river | Winter | 16:00–24:00 | 85 |
+| Common carp | Lake / river | All seasons | 00:00–24:00 | 48 |
+| Giant gourami | Lake / river | All seasons | 06:00–18:00 * | 85 |
+| Mackerel | Beach / island sea | All seasons | 00:00–24:00 | 32 |
+| Red snapper | Beach / island sea | All seasons | 06:00–18:00 * | 78 |
+| Grouper | Beach / island sea | Summer, Autumn | 06:00–24:00 | 105 |
+| Barracuda | Beach / island sea | All seasons | 16:00–24:00 | 125 |
+| Eel | Farm pond / lake / river | Autumn | 20:00–24:00 | 110 |
+| Koi | Farm pond / lake / river | All seasons | 00:00–24:00 * | 79 |
+| Goldfish | Farm pond / lake / river | Summer, Spring | 06:00–20:00 | 42 |
+| Grass carp | Lake / river | Autumn, Winter | 08:00–22:00 | 56 |
+| Rohu | Lake / river | Summer, Autumn, Spring | 16:00–24:00 * | 62 |
+| Tiger barb | Farm pond / lake / river | All seasons | 00:00–24:00 | 38 |
+| Rasbora | Farm pond / lake / river | Summer, Spring | 06:00–20:00 | 16 |
+| Mahseer | Lake / river | Autumn, Winter | 08:00–22:00 * | 118 |
+| Redtail catfish | Lake / river | Summer, Autumn, Spring | 16:00–24:00 | 146 |
+| Silver arowana | Lake / river | All seasons | 00:00–24:00 | 220 |
+| Giant barb | Lake / river | Summer, Spring | 06:00–20:00 * | 190 |
+| Sardine | Beach / island sea | Autumn, Winter | 08:00–22:00 | 24 |
+| Red mullet | Beach / island sea | Summer, Autumn, Spring | 16:00–24:00 | 52 |
+| Bonito | Beach / island sea | All seasons | 00:00–24:00 * | 76 |
+| Silver pomfret | Beach / island sea | Summer, Spring | 06:00–20:00 | 89 |
+| Flounder | Beach / island sea | Autumn, Winter | 08:00–22:00 | 72 |
+| Whiting | Beach / island sea | Summer, Autumn, Spring | 16:00–24:00 * | 28 |
+| Golden trevally | Beach / island sea | All seasons | 00:00–24:00 | 105 |
+| Mahi-mahi | Beach / island sea | Summer, Spring | 06:00–20:00 | 140 |
+| Swordfish | Beach / island sea | Autumn, Winter | 08:00–22:00 * | 200 |
+| Sailfish | Beach / island sea | Summer, Autumn, Spring | 16:00–24:00 | 235 |
+
+\* When the weather is wet, these fish may bite outside their normal hours, but still only in their listed seasons and locations. Ship catches for payment next morning, or sell eligible goods at your fresh-market stall.
+
+### Equipment and tools
+
+| Key | Equipment | Use | Progression / notes |
+|---|---|---|---|
+| 1 | Hoe | Till soil and clear grass | Ore-based tool levels and the iron hoe |
+| 2 | Watering can | Water crops/saplings; refill beside water | 10 uses initially; copper can holds 20 |
+| 3 | Harvest hand | Harvest ripe crops | Also carry produce, fish or ore selected from the bag |
+| 4 | Seed bag | Plant on tilled soil | Q switches seeds; respect growing seasons |
+| 5 | Fishing rod | First-person fishing minigame | Carbon rod and bait improve fishing |
+| 6 | Axe | Clear trees, stumps and logs | Ore-based levels clear tougher obstacles |
+| 7 | Pickaxe | Break rocks and mine ore veins | Required levels are listed in the ore table |
+| — | Rope ladder | Descend to lower cave floors | Buy from the smith or complete an available ore request |
+| — | Path lamp | Light outdoor paths at night | Buy and place from the journal’s Notes category |
+| — | Bag | Carry different item types in slots | 15 initial slots; expandable to 150 |
+
+#### Shop equipment upgrades
+
+| Upgrade | Price | Effect |
+|---|---|---|
+| Copper watering can | 165 | Watering costs 1 less energy |
+| Iron hoe | 202 | Tilling costs 1 less energy |
+| Carbon fishing rod | 232 | Fish bite 28% sooner |
+
+#### Fishing bait
+
+| Bait | Rare-fish selection weight | Price |
+|---|---|---|
+| Homemade bait | ×1 | Free / unlimited |
+| Earthworm | ×1.8 | ฿18 / 3 pieces |
+| Fresh shrimp | ×3 | ฿42 / 3 pieces |
+| Glow bait | ×5 | ฿82 / 3 pieces |
+
+Bait multipliers change rare fish selection weights, not a guaranteed catch rate. Tool upgrades combine multiple ore types and may require seals. Strength, Stamina and Luck are raised in the journal.
 
 ## 🚧 Roadmap
 
@@ -325,7 +412,7 @@ If you close the game in the middle of a day, that day's work is lost, so go to 
 **Still to do**
 
 - [ ] Seasonal scenery (the farm uses one picture in every season)
-- [ ] Play-testing on a real phone, and installing to the home screen as an app (PWA)
+- [ ] Mobile controls and PWA installation (deferred)
 
 ## 🧰 About the `.claude/skills` folder
 
