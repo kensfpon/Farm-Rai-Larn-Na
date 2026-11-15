@@ -54,6 +54,7 @@ The game is in English by default and can be switched to Thai at any time.
 > Every picture on this page is taken from the real game. Some were staged first (crops already planted, animals already bought) so one picture can show a whole system.
 
 > Screenshots and features describe the current development build. This update publishes documentation and screenshots only; the newer gameplay implementation is not included.
+> Screenshots were retaken from the running game on 15 November 2026. Table icons use the actual in-game item artwork.
 
 ## 🚀 Getting started
 
@@ -237,159 +238,159 @@ Values below come from the current development build. Prices use in-game baht. R
 
 Growth counts watered days; rain can water the field for you.
 
-| Crop | Growing seasons | Days | Seed price | Sale price/item |
-|---|---|---|---|---|
-| Morning glory | All seasons | 3 | 15 | 25 |
-| Yardlong bean | Summer, Autumn | 5 | 38 | 70 |
-| Watermelon | Summer | 9 | 90 | 200 |
-| Corn | Autumn | 6 | 45 | 90 |
-| Chili | Autumn | 7 | 60 | 120 |
-| Pumpkin | Autumn, Winter | 8 | 75 | 160 |
-| Cabbage | Winter | 6 | 45 | 95 |
-| Tomato | Winter | 7 | 60 | 125 |
-| Strawberry | Winter, Spring | 9 | 105 | 230 |
-| Carrot | Winter, Summer, Spring | 4 | 27 | 50 |
-| Pineapple | Summer, Autumn | 8 | 75 | 165 |
-| Eggplant | All seasons | 5 | 33 | 65 |
-| Papaya | Summer, Autumn | 7 | 57 | 110 |
-| Cucumber | Spring, Summer, Autumn | 4 | 27 | 48 |
-| Beetroot | Winter | 5 | 36 | 74 |
-| Broccoli | Winter, Autumn | 6 | 48 | 98 |
-| Melon | Summer | 8 | 82 | 175 |
-| Dragon fruit | Summer, Autumn | 9 | 93 | 195 |
-| Passion fruit | Autumn, Winter | 7 | 63 | 132 |
-| Bok choy | Winter, Spring | 3 | 18 | 32 |
-| Radish | Spring, Winter | 4 | 24 | 48 |
-| Cauliflower | Winter | 8 | 69 | 154 |
-| Shallot | Summer, Winter | 6 | 48 | 98 |
-| Garlic | Winter, Spring | 6 | 44 | 88 |
-| Asparagus | Spring, Autumn | 8 | 72 | 153 |
-| Snow pea | Spring, Winter | 5 | 38 | 72 |
-| Zucchini | Summer, Spring | 5 | 34 | 70 |
-| Bell pepper | Summer, Autumn | 7 | 57 | 119 |
-| Lettuce | Spring, Winter, Autumn | 4 | 24 | 46 |
+| Icon | Crop | Growing seasons | Days | Seed price | Sale price/item |
+|---|---|---|---|---|---|
+| <img src="docs/readme/icons/crop-morningGlory.webp" alt="" width="32" height="32"> | Morning glory | All seasons | 3 | 15 | 25 |
+| <img src="docs/readme/icons/crop-longBean.webp" alt="" width="32" height="32"> | Yardlong bean | Summer, Autumn | 5 | 38 | 70 |
+| <img src="docs/readme/icons/crop-watermelon.webp" alt="" width="32" height="32"> | Watermelon | Summer | 9 | 90 | 200 |
+| <img src="docs/readme/icons/crop-corn.webp" alt="" width="32" height="32"> | Corn | Autumn | 6 | 45 | 90 |
+| <img src="docs/readme/icons/crop-chili.webp" alt="" width="32" height="32"> | Chili | Autumn | 7 | 60 | 120 |
+| <img src="docs/readme/icons/crop-pumpkin.webp" alt="" width="32" height="32"> | Pumpkin | Autumn, Winter | 8 | 75 | 160 |
+| <img src="docs/readme/icons/crop-cabbage.webp" alt="" width="32" height="32"> | Cabbage | Winter | 6 | 45 | 95 |
+| <img src="docs/readme/icons/crop-tomato.webp" alt="" width="32" height="32"> | Tomato | Winter | 7 | 60 | 125 |
+| <img src="docs/readme/icons/crop-strawberry.webp" alt="" width="32" height="32"> | Strawberry | Winter, Spring | 9 | 105 | 230 |
+| <img src="docs/readme/icons/crop-carrot.webp" alt="" width="32" height="32"> | Carrot | Winter, Summer, Spring | 4 | 27 | 50 |
+| <img src="docs/readme/icons/crop-pineapple.webp" alt="" width="32" height="32"> | Pineapple | Summer, Autumn | 8 | 75 | 165 |
+| <img src="docs/readme/icons/crop-eggplant.webp" alt="" width="32" height="32"> | Eggplant | All seasons | 5 | 33 | 65 |
+| <img src="docs/readme/icons/crop-papaya.webp" alt="" width="32" height="32"> | Papaya | Summer, Autumn | 7 | 57 | 110 |
+| <img src="docs/readme/icons/crop-cucumber.webp" alt="" width="32" height="32"> | Cucumber | Spring, Summer, Autumn | 4 | 27 | 48 |
+| <img src="docs/readme/icons/crop-beet.webp" alt="" width="32" height="32"> | Beetroot | Winter | 5 | 36 | 74 |
+| <img src="docs/readme/icons/crop-broccoli.webp" alt="" width="32" height="32"> | Broccoli | Winter, Autumn | 6 | 48 | 98 |
+| <img src="docs/readme/icons/crop-melon.webp" alt="" width="32" height="32"> | Melon | Summer | 8 | 82 | 175 |
+| <img src="docs/readme/icons/crop-dragonfruit.webp" alt="" width="32" height="32"> | Dragon fruit | Summer, Autumn | 9 | 93 | 195 |
+| <img src="docs/readme/icons/crop-passionfruit.webp" alt="" width="32" height="32"> | Passion fruit | Autumn, Winter | 7 | 63 | 132 |
+| <img src="docs/readme/icons/crop-bokChoy.webp" alt="" width="32" height="32"> | Bok choy | Winter, Spring | 3 | 18 | 32 |
+| <img src="docs/readme/icons/crop-radish.webp" alt="" width="32" height="32"> | Radish | Spring, Winter | 4 | 24 | 48 |
+| <img src="docs/readme/icons/crop-cauliflower.webp" alt="" width="32" height="32"> | Cauliflower | Winter | 8 | 69 | 154 |
+| <img src="docs/readme/icons/crop-redOnion.webp" alt="" width="32" height="32"> | Shallot | Summer, Winter | 6 | 48 | 98 |
+| <img src="docs/readme/icons/crop-garlic.webp" alt="" width="32" height="32"> | Garlic | Winter, Spring | 6 | 44 | 88 |
+| <img src="docs/readme/icons/crop-asparagus.webp" alt="" width="32" height="32"> | Asparagus | Spring, Autumn | 8 | 72 | 153 |
+| <img src="docs/readme/icons/crop-snowPea.webp" alt="" width="32" height="32"> | Snow pea | Spring, Winter | 5 | 38 | 72 |
+| <img src="docs/readme/icons/crop-zucchini.webp" alt="" width="32" height="32"> | Zucchini | Summer, Spring | 5 | 34 | 70 |
+| <img src="docs/readme/icons/crop-bellPepper.webp" alt="" width="32" height="32"> | Bell pepper | Summer, Autumn | 7 | 57 | 119 |
+| <img src="docs/readme/icons/crop-lettuce.webp" alt="" width="32" height="32"> | Lettuce | Spring, Winter, Autumn | 4 | 24 | 46 |
 
 ### Fruit trees · 15 types
 
 Clear wood and rocks before planting. Water saplings until mature; harvest cycles apply during fruiting seasons.
 
-| Tree | Fruiting seasons | Days to mature | Harvest cycle/days | Fruit/cycle |
-|---|---|---|---|---|
-| Namwa banana | All seasons | 6 | 5 | 2 |
-| Nam Dok Mai mango | Summer | 10 | 3 | 3 |
-| Longan | Autumn | 12 | 3 | 3 |
-| Honey tangerine | Winter | 12 | 3 | 3 |
-| Lychee | Summer | 12 | 3 | 3 |
-| Rambutan | Autumn | 12 | 3 | 3 |
-| Mangosteen | Autumn | 14 | 4 | 3 |
-| Durian | Summer | 18 | 6 | 2 |
-| Jackfruit | Summer, Autumn | 15 | 6 | 2 |
-| Papaya | All seasons | 7 | 4 | 2 |
-| Coconut | All seasons | 14 | 6 | 2 |
-| Guava | Winter, Spring | 9 | 3 | 3 |
-| Pomelo | Winter | 14 | 5 | 2 |
-| Sweet tamarind | Winter, Spring | 13 | 4 | 3 |
-| Starfruit | Spring, Autumn | 10 | 3 | 3 |
+| Icon | Tree | Fruiting seasons | Days to mature | Harvest cycle/days | Fruit/cycle |
+|---|---|---|---|---|---|
+| <img src="docs/readme/icons/fruit-banana.webp" alt="" width="32" height="32"> | Namwa banana | All seasons | 6 | 5 | 2 |
+| <img src="docs/readme/icons/fruit-mango.webp" alt="" width="32" height="32"> | Nam Dok Mai mango | Summer | 10 | 3 | 3 |
+| <img src="docs/readme/icons/fruit-longan.webp" alt="" width="32" height="32"> | Longan | Autumn | 12 | 3 | 3 |
+| <img src="docs/readme/icons/fruit-orange.webp" alt="" width="32" height="32"> | Honey tangerine | Winter | 12 | 3 | 3 |
+| <img src="docs/readme/icons/fruit-lychee.webp" alt="" width="32" height="32"> | Lychee | Summer | 12 | 3 | 3 |
+| <img src="docs/readme/icons/fruit-rambutan.webp" alt="" width="32" height="32"> | Rambutan | Autumn | 12 | 3 | 3 |
+| <img src="docs/readme/icons/fruit-mangosteen.webp" alt="" width="32" height="32"> | Mangosteen | Autumn | 14 | 4 | 3 |
+| <img src="docs/readme/icons/fruit-durian.webp" alt="" width="32" height="32"> | Durian | Summer | 18 | 6 | 2 |
+| <img src="docs/readme/icons/fruit-jackfruit.webp" alt="" width="32" height="32"> | Jackfruit | Summer, Autumn | 15 | 6 | 2 |
+| <img src="docs/readme/icons/fruit-papaya.webp" alt="" width="32" height="32"> | Papaya | All seasons | 7 | 4 | 2 |
+| <img src="docs/readme/icons/fruit-coconut.webp" alt="" width="32" height="32"> | Coconut | All seasons | 14 | 6 | 2 |
+| <img src="docs/readme/icons/fruit-guava.webp" alt="" width="32" height="32"> | Guava | Winter, Spring | 9 | 3 | 3 |
+| <img src="docs/readme/icons/fruit-pomelo.webp" alt="" width="32" height="32"> | Pomelo | Winter | 14 | 5 | 2 |
+| <img src="docs/readme/icons/fruit-tamarind.webp" alt="" width="32" height="32"> | Sweet tamarind | Winter, Spring | 13 | 4 | 3 |
+| <img src="docs/readme/icons/fruit-starfruit.webp" alt="" width="32" height="32"> | Starfruit | Spring, Autumn | 10 | 3 | 3 |
 
 ### Ore and gems · 15 types
 
 Veins roll daily across five cave floors; deeper floors offer rarer materials. These are the pickaxe levels required to mine each type directly.
 
-| Ore / gem | Minimum pickaxe level |
-|---|---|
-| Copper | 1 |
-| Iron | 2 |
-| Silver | 3 |
-| Gold | 4 |
-| Star crystal | 5 |
-| Quartz | 6 |
-| Jade | 7 |
-| Amethyst | 8 |
-| Garnet | 9 |
-| Topaz | 10 |
-| Sapphire | 11 |
-| Emerald | 12 |
-| Ruby | 13 |
-| Moonstone | 14 |
-| Diamond | 15 |
+| Icon | Ore / gem | Minimum pickaxe level |
+|---|---|---|
+| <img src="docs/readme/icons/ore-0.webp" alt="" width="32" height="32"> | Copper | 1 |
+| <img src="docs/readme/icons/ore-1.webp" alt="" width="32" height="32"> | Iron | 2 |
+| <img src="docs/readme/icons/ore-2.webp" alt="" width="32" height="32"> | Silver | 3 |
+| <img src="docs/readme/icons/ore-3.webp" alt="" width="32" height="32"> | Gold | 4 |
+| <img src="docs/readme/icons/ore-4.webp" alt="" width="32" height="32"> | Star crystal | 5 |
+| <img src="docs/readme/icons/ore-5.webp" alt="" width="32" height="32"> | Quartz | 6 |
+| <img src="docs/readme/icons/ore-6.webp" alt="" width="32" height="32"> | Jade | 7 |
+| <img src="docs/readme/icons/ore-7.webp" alt="" width="32" height="32"> | Amethyst | 8 |
+| <img src="docs/readme/icons/ore-8.webp" alt="" width="32" height="32"> | Garnet | 9 |
+| <img src="docs/readme/icons/ore-9.webp" alt="" width="32" height="32"> | Topaz | 10 |
+| <img src="docs/readme/icons/ore-10.webp" alt="" width="32" height="32"> | Sapphire | 11 |
+| <img src="docs/readme/icons/ore-11.webp" alt="" width="32" height="32"> | Emerald | 12 |
+| <img src="docs/readme/icons/ore-12.webp" alt="" width="32" height="32"> | Ruby | 13 |
+| <img src="docs/readme/icons/ore-13.webp" alt="" width="32" height="32"> | Moonstone | 14 |
+| <img src="docs/readme/icons/ore-14.webp" alt="" width="32" height="32"> | Diamond | 15 |
 
 ### Fish · 37 species
 
 20 freshwater and 17 saltwater species. Farm ponds accept pond species; lakes and rivers accept all freshwater species. Three saltwater species are exclusive to Starwake Island after its bridge is built.
 
-| Species | Fishing locations | Seasons | Hours | Sale price/fish |
-|---|---|---|---|---|
-| Coral trout | Island sea only | All seasons | 06:00–18:00 | 260 |
-| Cobia | Island sea only | Summer, Autumn, Spring | 00:00–24:00 | 300 |
-| Giant trevally | Island sea only | All seasons | 16:00–24:00 * | 360 |
-| Nile tilapia | Farm pond / lake / river | All seasons | 00:00–24:00 | 12 |
-| Silver barb | Farm pond / lake / river | Summer, Autumn | 06:00–18:00 | 18 |
-| Snakeskin gourami | Farm pond / lake / river | Winter | 06:00–18:00 | 20 |
-| Climbing perch | Farm pond / lake / river | Autumn | 00:00–24:00 | 25 |
-| Catfish | Farm pond / lake / river | Summer, Autumn | 18:00–24:00 * | 35 |
-| Snakehead | Farm pond / lake / river | All seasons | 06:00–10:00 | 60 |
-| Featherback | Farm pond / lake / river | Winter | 16:00–24:00 | 85 |
-| Common carp | Lake / river | All seasons | 00:00–24:00 | 48 |
-| Giant gourami | Lake / river | All seasons | 06:00–18:00 * | 85 |
-| Mackerel | Beach / island sea | All seasons | 00:00–24:00 | 32 |
-| Red snapper | Beach / island sea | All seasons | 06:00–18:00 * | 78 |
-| Grouper | Beach / island sea | Summer, Autumn | 06:00–24:00 | 105 |
-| Barracuda | Beach / island sea | All seasons | 16:00–24:00 | 125 |
-| Eel | Farm pond / lake / river | Autumn | 20:00–24:00 | 110 |
-| Koi | Farm pond / lake / river | All seasons | 00:00–24:00 * | 79 |
-| Goldfish | Farm pond / lake / river | Summer, Spring | 06:00–20:00 | 42 |
-| Grass carp | Lake / river | Autumn, Winter | 08:00–22:00 | 56 |
-| Rohu | Lake / river | Summer, Autumn, Spring | 16:00–24:00 * | 62 |
-| Tiger barb | Farm pond / lake / river | All seasons | 00:00–24:00 | 38 |
-| Rasbora | Farm pond / lake / river | Summer, Spring | 06:00–20:00 | 16 |
-| Mahseer | Lake / river | Autumn, Winter | 08:00–22:00 * | 118 |
-| Redtail catfish | Lake / river | Summer, Autumn, Spring | 16:00–24:00 | 146 |
-| Silver arowana | Lake / river | All seasons | 00:00–24:00 | 220 |
-| Giant barb | Lake / river | Summer, Spring | 06:00–20:00 * | 190 |
-| Sardine | Beach / island sea | Autumn, Winter | 08:00–22:00 | 24 |
-| Red mullet | Beach / island sea | Summer, Autumn, Spring | 16:00–24:00 | 52 |
-| Bonito | Beach / island sea | All seasons | 00:00–24:00 * | 76 |
-| Silver pomfret | Beach / island sea | Summer, Spring | 06:00–20:00 | 89 |
-| Flounder | Beach / island sea | Autumn, Winter | 08:00–22:00 | 72 |
-| Whiting | Beach / island sea | Summer, Autumn, Spring | 16:00–24:00 * | 28 |
-| Golden trevally | Beach / island sea | All seasons | 00:00–24:00 | 105 |
-| Mahi-mahi | Beach / island sea | Summer, Spring | 06:00–20:00 | 140 |
-| Swordfish | Beach / island sea | Autumn, Winter | 08:00–22:00 * | 200 |
-| Sailfish | Beach / island sea | Summer, Autumn, Spring | 16:00–24:00 | 235 |
+| Icon | Species | Fishing locations | Seasons | Hours | Sale price/fish |
+|---|---|---|---|---|---|
+| <img src="docs/readme/icons/fish-coralTrout.webp" alt="" width="32" height="32"> | Coral trout | Island sea only | All seasons | 06:00–18:00 | 260 |
+| <img src="docs/readme/icons/fish-cobia.webp" alt="" width="32" height="32"> | Cobia | Island sea only | Summer, Autumn, Spring | 00:00–24:00 | 300 |
+| <img src="docs/readme/icons/fish-giantTrevally.webp" alt="" width="32" height="32"> | Giant trevally | Island sea only | All seasons | 16:00–24:00 * | 360 |
+| <img src="docs/readme/icons/fish-tilapia.webp" alt="" width="32" height="32"> | Nile tilapia | Farm pond / lake / river | All seasons | 00:00–24:00 | 12 |
+| <img src="docs/readme/icons/fish-barb.webp" alt="" width="32" height="32"> | Silver barb | Farm pond / lake / river | Summer, Autumn | 06:00–18:00 | 18 |
+| <img src="docs/readme/icons/fish-gourami.webp" alt="" width="32" height="32"> | Snakeskin gourami | Farm pond / lake / river | Winter | 06:00–18:00 | 20 |
+| <img src="docs/readme/icons/fish-perch.webp" alt="" width="32" height="32"> | Climbing perch | Farm pond / lake / river | Autumn | 00:00–24:00 | 25 |
+| <img src="docs/readme/icons/fish-catfish.webp" alt="" width="32" height="32"> | Catfish | Farm pond / lake / river | Summer, Autumn | 18:00–24:00 * | 35 |
+| <img src="docs/readme/icons/fish-snakehead.webp" alt="" width="32" height="32"> | Snakehead | Farm pond / lake / river | All seasons | 06:00–10:00 | 60 |
+| <img src="docs/readme/icons/fish-featherback.webp" alt="" width="32" height="32"> | Featherback | Farm pond / lake / river | Winter | 16:00–24:00 | 85 |
+| <img src="docs/readme/icons/fish-carp.webp" alt="" width="32" height="32"> | Common carp | Lake / river | All seasons | 00:00–24:00 | 48 |
+| <img src="docs/readme/icons/fish-giantGourami.webp" alt="" width="32" height="32"> | Giant gourami | Lake / river | All seasons | 06:00–18:00 * | 85 |
+| <img src="docs/readme/icons/fish-mackerel.webp" alt="" width="32" height="32"> | Mackerel | Beach / island sea | All seasons | 00:00–24:00 | 32 |
+| <img src="docs/readme/icons/fish-snapper.webp" alt="" width="32" height="32"> | Red snapper | Beach / island sea | All seasons | 06:00–18:00 * | 78 |
+| <img src="docs/readme/icons/fish-grouper.webp" alt="" width="32" height="32"> | Grouper | Beach / island sea | Summer, Autumn | 06:00–24:00 | 105 |
+| <img src="docs/readme/icons/fish-barracuda.webp" alt="" width="32" height="32"> | Barracuda | Beach / island sea | All seasons | 16:00–24:00 | 125 |
+| <img src="docs/readme/icons/fish-eel.webp" alt="" width="32" height="32"> | Eel | Farm pond / lake / river | Autumn | 20:00–24:00 | 110 |
+| <img src="docs/readme/icons/fish-koi.webp" alt="" width="32" height="32"> | Koi | Farm pond / lake / river | All seasons | 00:00–24:00 * | 79 |
+| <img src="docs/readme/icons/fish-goldfish.webp" alt="" width="32" height="32"> | Goldfish | Farm pond / lake / river | Summer, Spring | 06:00–20:00 | 42 |
+| <img src="docs/readme/icons/fish-grassCarp.webp" alt="" width="32" height="32"> | Grass carp | Lake / river | Autumn, Winter | 08:00–22:00 | 56 |
+| <img src="docs/readme/icons/fish-rohu.webp" alt="" width="32" height="32"> | Rohu | Lake / river | Summer, Autumn, Spring | 16:00–24:00 * | 62 |
+| <img src="docs/readme/icons/fish-tigerBarb.webp" alt="" width="32" height="32"> | Tiger barb | Farm pond / lake / river | All seasons | 00:00–24:00 | 38 |
+| <img src="docs/readme/icons/fish-rasbora.webp" alt="" width="32" height="32"> | Rasbora | Farm pond / lake / river | Summer, Spring | 06:00–20:00 | 16 |
+| <img src="docs/readme/icons/fish-mahseer.webp" alt="" width="32" height="32"> | Mahseer | Lake / river | Autumn, Winter | 08:00–22:00 * | 118 |
+| <img src="docs/readme/icons/fish-redtail.webp" alt="" width="32" height="32"> | Redtail catfish | Lake / river | Summer, Autumn, Spring | 16:00–24:00 | 146 |
+| <img src="docs/readme/icons/fish-arowana.webp" alt="" width="32" height="32"> | Silver arowana | Lake / river | All seasons | 00:00–24:00 | 220 |
+| <img src="docs/readme/icons/fish-giantBarb.webp" alt="" width="32" height="32"> | Giant barb | Lake / river | Summer, Spring | 06:00–20:00 * | 190 |
+| <img src="docs/readme/icons/fish-sardine.webp" alt="" width="32" height="32"> | Sardine | Beach / island sea | Autumn, Winter | 08:00–22:00 | 24 |
+| <img src="docs/readme/icons/fish-redMullet.webp" alt="" width="32" height="32"> | Red mullet | Beach / island sea | Summer, Autumn, Spring | 16:00–24:00 | 52 |
+| <img src="docs/readme/icons/fish-bonito.webp" alt="" width="32" height="32"> | Bonito | Beach / island sea | All seasons | 00:00–24:00 * | 76 |
+| <img src="docs/readme/icons/fish-pomfret.webp" alt="" width="32" height="32"> | Silver pomfret | Beach / island sea | Summer, Spring | 06:00–20:00 | 89 |
+| <img src="docs/readme/icons/fish-flounder.webp" alt="" width="32" height="32"> | Flounder | Beach / island sea | Autumn, Winter | 08:00–22:00 | 72 |
+| <img src="docs/readme/icons/fish-whiting.webp" alt="" width="32" height="32"> | Whiting | Beach / island sea | Summer, Autumn, Spring | 16:00–24:00 * | 28 |
+| <img src="docs/readme/icons/fish-trevally.webp" alt="" width="32" height="32"> | Golden trevally | Beach / island sea | All seasons | 00:00–24:00 | 105 |
+| <img src="docs/readme/icons/fish-mahi.webp" alt="" width="32" height="32"> | Mahi-mahi | Beach / island sea | Summer, Spring | 06:00–20:00 | 140 |
+| <img src="docs/readme/icons/fish-swordfish.webp" alt="" width="32" height="32"> | Swordfish | Beach / island sea | Autumn, Winter | 08:00–22:00 * | 200 |
+| <img src="docs/readme/icons/fish-sailfish.webp" alt="" width="32" height="32"> | Sailfish | Beach / island sea | Summer, Autumn, Spring | 16:00–24:00 | 235 |
 
 \* When the weather is wet, these fish may bite outside their normal hours, but still only in their listed seasons and locations. Ship catches for payment next morning, or sell eligible goods at your fresh-market stall.
 
 ### Equipment and tools
 
-| Key | Equipment | Use | Progression / notes |
-|---|---|---|---|
-| 1 | Hoe | Till soil and clear grass | Ore-based tool levels and the iron hoe |
-| 2 | Watering can | Water crops/saplings; refill beside water | 10 uses initially; copper can holds 20 |
-| 3 | Harvest hand | Harvest ripe crops | Also carry produce, fish or ore selected from the bag |
-| 4 | Seed bag | Plant on tilled soil | Q switches seeds; respect growing seasons |
-| 5 | Fishing rod | First-person fishing minigame | Carbon rod and bait improve fishing |
-| 6 | Axe | Clear trees, stumps and logs | Ore-based levels clear tougher obstacles |
-| 7 | Pickaxe | Break rocks and mine ore veins | Required levels are listed in the ore table |
-| — | Rope ladder | Descend to lower cave floors | Buy from the smith or complete an available ore request |
-| — | Path lamp | Light outdoor paths at night | Buy and place from the journal’s Notes category |
-| — | Bag | Carry different item types in slots | 15 initial slots; expandable to 150 |
+| Icon | Key | Equipment | Use | Progression / notes |
+|---|---|---|---|---|
+| <img src="docs/readme/icons/tool-hoe.webp" alt="" width="32" height="32"> | 1 | Hoe | Till soil and clear grass | Ore-based tool levels and the iron hoe |
+| <img src="docs/readme/icons/tool-can.webp" alt="" width="32" height="32"> | 2 | Watering can | Water crops/saplings; refill beside water | 10 uses initially; copper can holds 20 |
+| <img src="docs/readme/icons/tool-hand.webp" alt="" width="32" height="32"> | 3 | Harvest hand | Harvest ripe crops | Also carry produce, fish or ore selected from the bag |
+| <img src="docs/readme/icons/tool-seed.webp" alt="" width="32" height="32"> | 4 | Seed bag | Plant on tilled soil | Q switches seeds; respect growing seasons |
+| <img src="docs/readme/icons/tool-rod.webp" alt="" width="32" height="32"> | 5 | Fishing rod | First-person fishing minigame | Carbon rod and bait improve fishing |
+| <img src="docs/readme/icons/tool-axe.webp" alt="" width="32" height="32"> | 6 | Axe | Clear trees, stumps and logs | Ore-based levels clear tougher obstacles |
+| <img src="docs/readme/icons/tool-pick.webp" alt="" width="32" height="32"> | 7 | Pickaxe | Break rocks and mine ore veins | Required levels are listed in the ore table |
+| <img src="docs/readme/icons/tool-ladder.webp" alt="" width="32" height="32"> | — | Rope ladder | Descend to lower cave floors | Buy from the smith or complete an available ore request |
+| <img src="docs/readme/icons/tool-lamp.webp" alt="" width="32" height="32"> | — | Path lamp | Light outdoor paths at night | Buy and place from the journal’s Notes category |
+| <img src="docs/readme/icons/tool-bag.webp" alt="" width="32" height="32"> | — | Bag | Carry different item types in slots | 15 initial slots; expandable to 150 |
 
 #### Shop equipment upgrades
 
-| Upgrade | Price | Effect |
-|---|---|---|
-| Copper watering can | 165 | Watering costs 1 less energy |
-| Iron hoe | 202 | Tilling costs 1 less energy |
-| Carbon fishing rod | 232 | Fish bite 28% sooner |
+| Icon | Upgrade | Price | Effect |
+|---|---|---|---|
+| <img src="docs/readme/icons/tool-can.webp" alt="" width="32" height="32"> | Copper watering can | 165 | Watering costs 1 less energy |
+| <img src="docs/readme/icons/tool-hoe.webp" alt="" width="32" height="32"> | Iron hoe | 202 | Tilling costs 1 less energy |
+| <img src="docs/readme/icons/tool-rod.webp" alt="" width="32" height="32"> | Carbon fishing rod | 232 | Fish bite 28% sooner |
 
 #### Fishing bait
 
-| Bait | Rare-fish selection weight | Price |
-|---|---|---|
-| Homemade bait | ×1 | Free / unlimited |
-| Earthworm | ×1.8 | ฿18 / 3 pieces |
-| Fresh shrimp | ×3 | ฿42 / 3 pieces |
-| Glow bait | ×5 | ฿82 / 3 pieces |
+| Icon | Bait | Rare-fish selection weight | Price |
+|---|---|---|---|
+| <img src="docs/readme/icons/bait-plain.webp" alt="" width="32" height="32"> | Homemade bait | ×1 | Free / unlimited |
+| <img src="docs/readme/icons/bait-worm.webp" alt="" width="32" height="32"> | Earthworm | ×1.8 | ฿18 / 3 pieces |
+| <img src="docs/readme/icons/bait-shrimp.webp" alt="" width="32" height="32"> | Fresh shrimp | ×3 | ฿42 / 3 pieces |
+| <img src="docs/readme/icons/bait-glow.webp" alt="" width="32" height="32"> | Glow bait | ×5 | ฿82 / 3 pieces |
 
 Bait multipliers change rare fish selection weights, not a guaranteed catch rate. Tool upgrades combine multiple ore types and may require seals. Strength, Stamina and Luck are raised in the journal.
 
