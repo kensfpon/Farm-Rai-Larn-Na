@@ -34,13 +34,13 @@ The game is in English by default and can be switched to Thai at any time.
 
 <table>
   <tr>
-    <td align="center" width="25%">🌱<br><b>29</b><br>crops</td>
+    <td align="center" width="25%">🌱<br><b>30</b><br>crops</td>
     <td align="center" width="25%">🎣<br><b>43</b><br>aquatic species</td>
     <td align="center" width="25%">🥭<br><b>15</b><br>fruit trees</td>
     <td align="center" width="25%">💎<br><b>15</b><br>ores</td>
   </tr>
   <tr>
-    <td align="center" width="25%">🐄<br><b>15</b><br>ranch animals</td>
+    <td align="center" width="25%">🐄<br><b>16</b><br>ranch animals</td>
     <td align="center" width="25%">🏮<br><b>7</b><br>festivals a year</td>
     <td align="center" width="25%">👥<br><b>36</b><br>villagers</td>
     <td align="center" width="25%">🌦️<br><b>4 · 5</b><br>seasons · kinds of weather</td>
@@ -54,23 +54,21 @@ The game is in English by default and can be switched to Thai at any time.
 > Every picture on this page is taken from the real game. Some were staged first (crops already planted, animals already bought) so one picture can show a whole system.
 
 > Screenshots and features describe the current development build. This update publishes documentation and screenshots only; the newer gameplay implementation is not included.
-> Screenshots were retaken from the running game on 15 November 2026. Table icons use the actual in-game item artwork.
+> Farm, greenhouse, wheat, barn, pig and night-lighting screenshots were captured from the running game on 16 November 2026. Other images show unchanged systems. Table icons use the actual in-game item artwork.
 
 ## 🆕 Latest additions
 
-- A cottage-sized Fruit Research Center with a connected entrance in Sweetleaf Glade; its red-roofed neighbour now stands farther north.
-- Seven festival themes repaint the village, both markets, the ranch and NPC homes, returning to normal after the event or a storm cancellation.
-- The second field has milestone access. A secluded greenhouse protects crops from weather damage, insects and weeds, while still requiring watering.
-- Crop insects and weeds begin at level 10. Temple offerings grant Luck +3 for seven days, once every seven days, without stacking.
-- Livestock have no level/festival purchase requirements; animals and feed are costly. Dogs/cats retain their separate adoption conditions.
+- **Larger planting spaces:** the cottage field and greenhouse each have five columns of three plants with walking aisles. Slots are 1.5× their previous size; mature crop artwork is 2× its previous size. Till the ground before sowing.
+- **30 crops with four growth stages:** visible seeds → seedling → immature plant → harvest-ready plant. Wheat is the newest crop.
+- **A working grain barn:** buy your first livestock animal to open the blue-roofed barn beside the cottage. Thresh wheat into clean grain and use it as animal feed.
+- **16 livestock kinds:** the new pink domestic pig is separate from the forest pig and produces pig compost when fed.
+- **Night lighting:** permanent front lanterns illuminate the cottage, barn, pet house, NPC homes and public buildings from 18:00 to 05:59.
+- **Protected growing and early-game pacing:** the second field and hidden greenhouse have their own progression milestones. The greenhouse has a refill basin, grows crops all year and prevents insects, weeds and weather damage. Insects and crop weeds elsewhere begin at level 10. Temple offerings grant Luck +3 for seven days, once every seven days, without stacking.
 
-<table><tr><td width="50%"><img src="docs/readme/research-center.webp" alt="research-center"></td><td width="50%"><img src="docs/readme/research-shop.webp" alt="research-shop"></td></tr></table>
-
-<table><tr><td width="50%"><img src="docs/readme/festival-village.webp" alt="festival-village"></td><td width="50%"><img src="docs/readme/festival-ranch.webp" alt="festival-ranch"></td></tr></table>
-
-<table><tr><td width="50%"><img src="docs/readme/festival-market.webp" alt="festival-market"></td><td width="50%"><img src="docs/readme/greenhouse.webp" alt="greenhouse"></td></tr></table>
-
-<table><tr><td width="50%"><img src="docs/readme/early-crops.webp" alt="early-crops"></td><td width="50%"><img src="docs/readme/weekly-merit.webp" alt="weekly-merit"></td></tr></table>
+<table>
+  <tr><td width="50%"><img src="docs/readme/greenhouse.webp" alt="Larger greenhouse beds and the refill basin"></td><td width="50%"><img src="docs/readme/wheat-threshing.webp" alt="Wheat sheaves become clean animal feed"></td></tr>
+  <tr><td align="center">Larger greenhouse beds and the refill basin</td><td align="center">Wheat sheaves become clean animal feed</td></tr>
+</table>
 
 ## 🚀 Getting started
 
@@ -162,12 +160,20 @@ Keyboard controls cover gameplay, menus, shops, pages, puzzles and fishing. Mous
 
 ### 🌱 Farm, crops and weather
 
-- **29 crops.** Grow them in the field by the cottage and water them every day. Seeds are sold at the seed shop in Wiang Kham Market; price and growing time differ by crop.
+- **30 crops.** Hoe a square, sow seeds, then water it on each growing day. The cottage field has 15 larger planting spaces in five columns of three, with aisles between columns. Seeds are sold at the seed shop in Wiang Kham Market.
+- **Four visible stages.** Newly sown seeds remain visible before becoming seedlings, immature plants and fully grown crops. Growth advances on watered days. Wheat takes six watered days and grows in winter, spring and summer.
 - **4 seasons.** Summer → autumn → winter → spring, 14 days each (56 days a year). Crops that cannot stand the new season wither, and the game warns you 3 days ahead.
 - **5 kinds of weather.** Sunny, rain, heatwave, storm and snow, always with a forecast for tomorrow. Rain waters the field for you, a storm can wilt plants and a heatwave makes every job more tiring.
-- **Day and night.** The sky darkens with the clock and the lamps you have placed light up after dark.
-- **Refill the watering can.** A fill waters 10 times (20 with the copper can). The blue bar below the can shows its water level. Select the can at the farm pond, lake or shore to refill it.
+- **Day and night.** The sky darkens with the clock. Building front lanterns and player-placed lamps light up from 18:00 to 05:59.
+- **Refill the watering can.** A fill waters 10 times (20 with the copper can). The blue bar below the can shows its water level. Select the can at the farm pond, lake, shore or greenhouse basin to refill it.
 - **Picture inventory.** The bag is a compact window of small picture cells. Use category tabs and Previous/Next buttons to browse items without vertical scrolling. Start with 15 slots, one per kind of item. Existing stacks still accept more when the bag is full. Tonkla sells 10 more slots per upgrade, up to 150; the final upgrade adds 5. Prices double from ฿200 to ฿1,638,400 on the fourteenth purchase.
+
+Cropped gameplay views of the same wheat plot at each growth stage.
+
+<table>
+  <tr><td width="25%"><img src="docs/readme/wheat-seeds.webp" alt="1 · Seeds"></td><td width="25%"><img src="docs/readme/wheat-seedling.webp" alt="2 · Seedling"></td><td width="25%"><img src="docs/readme/wheat-young.webp" alt="3 · Immature plant"></td><td width="25%"><img src="docs/readme/wheat-ripe.webp" alt="4 · Ready to harvest"></td></tr>
+  <tr><td align="center">1 · Seeds</td><td align="center">2 · Seedling</td><td align="center">3 · Immature plant</td><td align="center">4 · Ready to harvest</td></tr>
+</table>
 
 ### 🎣 Fishing
 
@@ -187,6 +193,11 @@ Keyboard controls cover gameplay, menus, shops, pages, puzzles and fishing. Mous
 - Fifteen sapling types unlock in seven level tiers (1–30). Prices double by tier, from ฿150 to ฿9,600. Water trees for a full in-game year before they bear fruit in their seasons.
 - Fertilizer increases fruit yield; storms can knock fruit down. The dining-room stove turns two fruit into a jar of jam overnight.
 
+<table>
+  <tr><td width="50%"><img src="docs/readme/research-center.webp" alt="Fruit Research Center in Sweetleaf Glade"></td><td width="50%"><img src="docs/readme/research-shop.webp" alt="Saplings and research supplies"></td></tr>
+  <tr><td align="center">Fruit Research Center in Sweetleaf Glade</td><td align="center">Saplings and research supplies</td></tr>
+</table>
+
 <p align="center"><img src="docs/readme/journal.webp" alt="Compact farm journal with category tabs and pages" width="720"></p>
 
 The compact journal separates status, quests, crops, ore, collections and notes into tabs and pages, with no vertical scrolling.
@@ -202,8 +213,27 @@ The compact journal separates status, quests, crops, ore, collections and notes 
 
 ### 🐄 Ranch animals
 
-15 kinds of animal live at the Livestock Ranch, including hens, ducks, cows, sheep, goats, buffalo and peafowl. Buy animals, feed each one a portion a day, and their produce is in your bag next morning.
-You can also have a chicken coop built on your own farm.
+**16 kinds** live at the Livestock Ranch, including hens, ducks, cows, sheep, goats, forest pigs and the new pink domestic pig. Purchases have no level or festival requirement, but animals and feed are expensive. Feed each animal one portion a day to receive its produce the next morning. You can also have a chicken coop built on your farm.
+
+A domestic pig costs **฿27,200**, sells for **฿12,800** and produces pig compost worth **฿600** when fed. Dogs and cats keep their separate adoption conditions.
+
+<table>
+  <tr><td width="50%"><img src="docs/readme/domestic-pig.webp" alt="Pink domestic pig at the ranch"></td><td width="50%"><img src="docs/readme/wheat-feed.webp" alt="Feed the herd with cleaned wheat grain"></td></tr>
+  <tr><td align="center">Pink domestic pig at the ranch</td><td align="center">Feed the herd with cleaned wheat grain</td></tr>
+</table>
+
+### 🌾 Wheat and the grain barn
+
+The blue-roofed barn beside the cottage opens permanently after your first successful livestock purchase. Buying a dog or cat does not open it. Walk through the barn entrance, approach the thresher and press **E**. Process one or ten sheaves at a time: **1 wheat sheaf + 2 energy → 3 portions of clean grain**.
+
+Each animal eats one portion per day. Herd care uses bought feed first, then cleaned wheat grain for any shortage. Raw wheat sheaves cannot be fed directly. Clean grain can also be shipped or sold at the fresh market.
+
+| Icon | Item | Source / use | Sale price |
+|---|---|---|---|
+| <img src="docs/readme/icons/goods-wheatGrain.webp" alt="" width="32" height="32"> | Clean wheat grain | Thresh wheat; one portion feeds one animal | 25 |
+| <img src="docs/readme/icons/goods-hogManure.webp" alt="" width="32" height="32"> | Pig compost | Collected next morning from a fed domestic pig | 600 |
+
+<p align="center"><img src="docs/readme/grain-barn.webp" alt="Inside the blue-roofed grain barn" width="85%"></p>
 
 ### 🏘️ Village, markets and neighbours
 
@@ -218,6 +248,13 @@ You can also have a chicken coop built on your own farm.
 - **Sweetleaf Glade and Bamboo Forest.** Gather fiddlehead ferns, wild mulberries and wild bananas in the glade (they grow back in a few days), and herbs and bamboo in the forest.
 
 <p align="center"><img src="docs/readme/shop.webp" alt="Shop categories and pagination" width="85%"></p>
+
+Every NPC home and public building has front lanterns, including the research area. They stay lit at night even when residents have gone to bed.
+
+<table>
+  <tr><td width="50%"><img src="docs/readme/night-farm.webp" alt="Farm buildings after dark"></td><td width="50%"><img src="docs/readme/night-village.webp" alt="Village homes and public lighting"></td></tr>
+  <tr><td align="center">Farm buildings after dark</td><td align="center">Village homes and public lighting</td></tr>
+</table>
 
 ### 🏮 Seven festivals a year
 
@@ -234,6 +271,13 @@ The morning report announces a festival 2 days ahead with what to bring, and the
 | 🌾 New Rice Offering & Crop Contest | Winter, day 10 | 09:00–17:00 | The dearest item in your bag wins 4× its price |
 | 🌸 Blossom Fair | Spring, day 5 | 08:00–18:00 | 4 packs of lettuce seeds |
 
+Festival artwork changes the village, both markets, ranch, NPC homes and the Fruit Research Center area to match the event.
+
+<table>
+  <tr><td width="33%"><img src="docs/readme/festival-village.webp" alt="Festival village"></td><td width="33%"><img src="docs/readme/festival-ranch.webp" alt="Festival ranch"></td><td width="33%"><img src="docs/readme/festival-market.webp" alt="Festival market"></td></tr>
+  <tr><td align="center">Festival village</td><td align="center">Festival ranch</td><td align="center">Festival market</td></tr>
+</table>
+
 ### 🐕 Outfits and pets
 
 Change clothes at the painted wardrobe inside the cottage. Adopt one permanent dog or cat at the Pet House beside the farm cottage after level 10 and four different festival wins. The choice cannot be changed; daily petting and following/staying home remain available.
@@ -242,16 +286,16 @@ Change clothes at the painted wardrobe inside the cottage. Adopt one permanent d
 
 ### 💾 Autosave
 
-The game saves into the browser (localStorage) every new morning, and older saves are upgraded to the current format automatically.
+The game saves into the browser (localStorage) every new morning, and older saves are upgraded to the current format automatically. Save format v16 preserves the new barn and wheat systems. When an old cottage field is resized to 15 spaces, plants are kept where possible; surplus living plants are returned as seeds or ripe produce.
 You can also save from Settings or choose **Save & title** / **Exit game**, which save before stopping the session. Exit pauses the game and sound; close the browser tab to leave. Cancelling the new-farm form preserves the existing save.
 
 ## 📋 In-game reference tables
 
 Values below come from the current development build. Prices use in-game baht. Rare shop items can also require seals earned from festivals or puzzles.
 
-### Crops and vegetables · 29 types
+### Crops and vegetables · 30 types
 
-Growth counts watered days; rain can water the field for you.
+Growth counts watered days; rain can water outdoor fields. The protected greenhouse grows every crop in every season, but still needs manual watering.
 
 | Icon | Crop | Growing seasons | Days | Seed price | Sale price/item |
 |---|---|---|---|---|---|
@@ -284,6 +328,7 @@ Growth counts watered days; rain can water the field for you.
 | <img src="docs/readme/icons/crop-zucchini.webp" alt="" width="32" height="32"> | Zucchini | Summer, Spring | 5 | 34 | 70 |
 | <img src="docs/readme/icons/crop-bellPepper.webp" alt="" width="32" height="32"> | Bell pepper | Summer, Autumn | 7 | 57 | 119 |
 | <img src="docs/readme/icons/crop-lettuce.webp" alt="" width="32" height="32"> | Lettuce | Spring, Winter, Autumn | 4 | 24 | 46 |
+| <img src="docs/readme/icons/crop-wheat.webp" alt="" width="32" height="32"> | Wheat | Winter, Spring, Summer | 6 | 30 | 65 |
 
 ### Fruit trees · 15 types
 
@@ -420,7 +465,7 @@ Bait multipliers change rare fish selection weights, not a guaranteed catch rate
 - [x] Fishing (first-person view, bait)
 - [x] ~~Rice paddy~~ removed; land expansion and the Frontier Meadow replace it
 - [x] Orchard (with fruit jam)
-- [x] 15 ranch animals
+- [x] 16 ranch animals, wheat threshing and grain feed
 - [x] Village, neighbours, festivals (with the fresh-market stall and the calendar)
 - [x] Mining, levels, tools and wild food
 - [x] Expandable picture inventory, hidden shrine puzzles and seal-locked shops
