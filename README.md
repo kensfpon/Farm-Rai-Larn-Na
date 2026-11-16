@@ -54,9 +54,22 @@ The game is in English by default and can be switched to Thai at any time.
 > Every picture on this page is taken from the real game. Some were staged first (crops already planted, animals already bought) so one picture can show a whole system.
 
 > Screenshots and features describe the current development build. This update publishes documentation and screenshots only; the newer gameplay implementation is not included.
-> Farm, greenhouse, wheat, barn, pig and night-lighting screenshots were captured from the running game on 16 November 2026. Other images show unchanged systems. Table icons use the actual in-game item artwork.
+> Kitchen, TV, temple, viharn and island screenshots were captured from the running game on 16 November 2026, as were the farm, greenhouse, wheat, barn, pig and night-lighting screenshots. Other images show unchanged systems. Table icons use the actual in-game item artwork.
 
 ## 🆕 Latest additions
+
+- **Home cooking with exact ingredients:** the cottage stove has 20 recipes over four kitchen levels. Each recipe names the exact fish, vegetable, fruit, egg or milk it needs (tilapia, not "any fish"; duck eggs, not chicken eggs). Meals restore energy, and many also give Strength, Luck or extra max energy until the next dawn. See [Cooking, kitchen and TV](#-cooking-kitchen-and-tv).
+- **Upgradable kitchen and TV:** both upgrades ask for a level, money and named ores. The window lists each ore with what you have and what you need. A better TV forecasts tomorrow's weather more accurately: 50% → 75% → 100%.
+- **Wat Doi Saeng Dao:** a hilltop temple between the Bamboo Forest and Sweetleaf Glade. Inside the viharn, pay respects, offer one vegetable or fruit, or donate ฿500 for Luck +3 for seven days. Songkran and Yi Peng are now held in the temple courtyard.
+- **Starwake Island:** win all seven festival trophies, collect the star key from Headman Chai, then open the gate at the end of Pearl Bay's fishing pier. The island has three island-only fish, gem veins, wild food and a sealed cache.
+- **Cave floors open by level:** floors 2–5 of Star Stone Cave open at levels 10, 20, 30 and 40.
+
+<table>
+  <tr><td width="50%"><img src="docs/readme/kitchen.webp" alt="Level 4 recipes listing the exact ingredients"></td><td width="50%"><img src="docs/readme/island.webp" alt="Starwake Island"></td></tr>
+  <tr><td align="center">Level 4 recipes list each exact ingredient with have/need</td><td align="center">Starwake Island beyond Pearl Bay</td></tr>
+</table>
+
+**Earlier in November**
 
 - **Larger planting spaces:** the cottage field and greenhouse each have five columns of three plants with walking aisles. Slots are 1.5× their previous size; mature crop artwork is 2× its previous size. Till the ground before sowing.
 - **30 crops with four growth stages:** visible seeds → seedling → immature plant → harvest-ready plant. Wheat is the newest crop.
@@ -142,7 +155,7 @@ Every place is its own painted map. Walk off the edge along a road, or through a
 The illustrated valley map (M) shows discovered places. A scene preview is revealed only after you reach that place. The map is informational; travel by walking along roads. There is no automatic return-home system.
 
 The roads form loops, so few places are dead ends: the ranch and the Frontier Meadow both lead down to Pearl Bay Beach, and the orchard
-links to Bua Kaew Lake and Sweetleaf Glade. A road leaves one map and enters the next at the same spot on the shared edge.
+links to Bua Kaew Lake and Sweetleaf Glade. The hilltop temple joins the Bamboo Forest to Sweetleaf Glade, and a wooden bridge from Pearl Bay leads to Starwake Island once its gate is unlocked. A road leaves one map and enters the next at the same spot on the shared edge.
 
 <table>
   <tr>
@@ -204,7 +217,7 @@ The compact journal separates status, quests, crops, ore, collections and notes 
 
 ### ⛏️ Mining, levels and tools
 
-- **Star Stone Cave.** Five floors, with rarer ore deeper down. Buy a rope ladder from the smith or earn one through an ore request to descend. Each vein may or may not be there on a given day and is spent once mined. 15 ores (copper, iron, silver, gold, star crystal, then quartz, jade, amethyst, garnet, topaz, sapphire, emerald, ruby, moonstone and diamond), dug with the pickaxe, with a bonus ore of the next kind depending on Luck.
+- **Star Stone Cave.** Five floors, with rarer ore deeper down. Floors 2, 3, 4 and 5 open at levels 10, 20, 30 and 40. Each vein may or may not be there on a given day and is spent once mined. 15 ores (copper, iron, silver, gold, star crystal, then quartz, jade, amethyst, garnet, topaz, sapphire, emerald, ruby, moonstone and diamond), dug with the pickaxe, with a bonus ore of the next kind depending on Luck.
 - **Frontier Meadow.** Open new farmland by clearing grass, trees and rocks, then till and plant it. Later plots need better tools.
 - **Levels and stats.** Work earns XP. Each level gives points for Strength, Stamina and Luck, more energy and a later bedtime.
 - **Blacksmith.** Trade ore to upgrade the hoe, axe and pickaxe, and buy lamps to place along the paths.
@@ -235,6 +248,51 @@ Each animal eats one portion per day. Herd care uses bought feed first, then cle
 
 <p align="center"><img src="docs/readme/grain-barn.webp" alt="Inside the blue-roofed grain barn" width="85%"></p>
 
+### 🍲 Cooking, kitchen and TV
+
+Cook at the stove inside the cottage. Each dish takes 10 minutes and you can carry up to 9 of each. Recipes name the exact item they use, and only that item is taken: a tilapia recipe will not take your snakehead. If something is missing, the card shows it in red with have/need, and the message names it ("Still missing: Nile tilapia ×1").
+
+Eating restores energy. Dishes from level 2 up also give a meal effect until the next dawn: Strength makes work cheaper, Luck improves fish and bonus ore, and Energy raises max energy for the day. A new meal replaces the old effect; effects do not stack.
+
+| Level | Dish | Ingredients | Energy | Meal effect |
+|---|---|---|---|---|
+| 1 | Boiled egg | Chicken egg 1 | 14 | — |
+| 1 | Stir-fried morning glory | Morning glory 2 | 20 | — |
+| 1 | Grilled tilapia | Nile tilapia 1 | 24 | — |
+| 1 | Rice porridge | Paddy rice 1, wild herbs 1 | 18 | Energy +10 |
+| 1 | Herbal tea | Wild herbs 2 | 8 | Luck +1 |
+| 2 | Omelette on rice | Chicken eggs 2, paddy rice 2, shallot 1 | 38 | Energy +20 |
+| 2 | Kaeng khae with long beans | Wild herbs 2, yardlong bean 1, eggplant 1, paddy rice 1 | 46 | Strength +1, Energy +25 |
+| 2 | Snakehead curry with rice | Snakehead 2, eggplant 1, chili 1, paddy rice 1, wild herbs 1 | 52 | Strength +2, Luck +2 |
+| 2 | Carrot and corn fried rice | Paddy rice 2, carrot 1, corn 1 | 48 | Strength +2 |
+| 2 | Pomelo and guava salad | Pomelo 1, guava 1, rambutan 1, wild herbs 1 | 40 | Luck +2 |
+| 3 | Mango and banana in fresh milk | Mango 2, banana 1, cow milk 2, wild herbs 1 | 64 | Energy +30 |
+| 3 | Khantoke supper | Catfish 2, chili 1, cucumber 1, yardlong bean 1, duck eggs 2, paddy rice 2 | 90 | Strength +4 |
+| 3 | Herbal carp soup | Common carp 2, wild herbs 3, tomato 1, shallot 1 | 75 | Strength +3, Luck +2 |
+| 3 | Goat cheese toast | Goat milk 3, clean wheat grain 2, chicken eggs 2 | 82 | Energy +40 |
+| 3 | Creamy pumpkin soup | Pumpkin 3, cow milk 2, wild herbs 2 | 78 | Strength +3, Energy +30 |
+| 4 | Royal northern curry | Mahseer 3, eggplant 2, chili 1, garlic 1, wild herbs 4, paddy rice 2 | 140 | Strength +7, Energy +60 |
+| 4 | Seafood hotpot | Tiger prawn 2, reef squid 1, sea clam 1, cabbage 2, wild herbs 3, coconut 2 | 160 | Strength +6, Luck +4 |
+| 4 | Starfruit celebration cake | Starfruit 5, cow milk 3, chicken eggs 3, clean wheat grain 2 | 125 | Luck +6, Energy +50 |
+| 4 | Woodland mushroom rice | Paddy rice 4, forest mushrooms 3, wild herbs 2, garlic 2, duck eggs 2 | 150 | Strength +8, Luck +3 |
+| 4 | Grand Lanna banquet | Giant gourami 3, chili 2, yardlong bean 2, longan 3, paddy rice 4, chicken eggs 3 | 220 | Strength +6, Luck +5, Energy +100 |
+
+**Upgrades.** The kitchen and the TV are upgraded from their own windows. Every ore is named, and the window shows how many you have against how many you need. Nothing is spent unless the level, money and every ore are all there.
+
+| Upgrade | Level | Price | Ores |
+|---|---|---|---|
+| Kitchen 2 · Brick kitchen | 10 | ฿5,000 | Copper 12, iron 6 |
+| Kitchen 3 · Full Lanna kitchen | 20 | ฿20,000 | Iron 12, silver 8, quartz 6 |
+| Kitchen 4 · Royal Lanna kitchen | 35 | ฿60,000 | Gold 10, star crystal 6, ruby 4 |
+| TV 2 · forecast right 75% of days | 10 | ฿5,000 | Copper 12, iron 6 |
+| TV 3 · forecast always right | 25 | ฿18,000 | Silver 10, gold 6, quartz 8 |
+
+The starting TV is right half the time. Its forecast is fixed for the day, so switching it off and on again does not change it.
+
+<p align="center"><img src="docs/readme/tv.webp" alt="TV weather report and the ores for the next upgrade" width="85%"></p>
+
+The TV window lists the next upgrade's ores by name with have/need; ores you are short of are shown in red.
+
 ### 🏘️ Village, markets and neighbours
 
 - **Wiang Kham Village.** Mali and Uncle Chai have friendship levels, take gifts and have a daily request. Uncle Chai also sells new farm plots, extends the house as you level up and builds the chicken coop.
@@ -256,10 +314,30 @@ Every NPC home and public building has front lanterns, including the research ar
   <tr><td align="center">Farm buildings after dark</td><td align="center">Village homes and public lighting</td></tr>
 </table>
 
+### 🛕 Wat Doi Saeng Dao
+
+A hilltop temple on the road between the Bamboo Forest and Sweetleaf Glade. The courtyard has the viharn, a white-and-gold chedi, a bell row, a bodhi tree and a seal wall that shows every shrine seal and festival trophy you have earned. Phra In and Auntie Lamduan live in the temple quarters.
+
+Inside the viharn, choose one of three ways to make merit: pay respects (free), offer one harvested vegetable or fruit (the cheapest one in the bag is chosen, and every neighbour's friendship rises by 1), or donate ฿500. Each gives **Luck +3 for seven days**, once a week, and blessings do not stack. Offerings are received 08:00–18:00.
+
+<table>
+  <tr><td width="50%"><img src="docs/readme/temple.webp" alt="Wat Doi Saeng Dao courtyard"></td><td width="50%"><img src="docs/readme/sanctuary.webp" alt="Making merit with Phra In inside the viharn"></td></tr>
+  <tr><td align="center">The temple courtyard</td><td align="center">Making merit with Phra In inside the viharn</td></tr>
+</table>
+
+### 🏝️ Starwake Island
+
+The island is the late-game reward. Win all seven festival trophies, then speak to Headman Chai in the village for the star key, and unlock the gate at the end of the fishing pier at Pearl Bay Beach. The bridge then leads to the island.
+
+- **Island-only fish:** coral trout, cobia and giant trevally, alongside the usual sea catches.
+- **Gem veins:** sapphire, emerald and moonstone, rolled each day like cave veins.
+- **Wild food:** sea grapes (2 every 2 days) and beach almonds (2 every 3 days).
+- **The tidekeeper's cache:** opens once you hold 8 seals. Its charm gives a permanent Stamina +2 (max energy +20) and 40 XP.
+
 ### 🏮 Seven festivals a year
 
 Each festival can be joined only on its day and during its hours, and a storm cancels it. Every festival raises friendship with all the neighbours.
-The morning report announces a festival 2 days ahead with what to bring, and the calendar (C) shows the whole year.
+The morning report announces a festival 2 days ahead with what to bring, and the calendar (C) shows the whole year. Songkran and Yi Peng are held in the Wat Doi Saeng Dao courtyard; the other five are in the village square.
 
 | Festival | Day | Hours | What you get |
 |---|---|---|---|
@@ -286,7 +364,7 @@ Change clothes at the painted wardrobe inside the cottage. Adopt one permanent d
 
 ### 💾 Autosave
 
-The game saves into the browser (localStorage) every new morning, and older saves are upgraded to the current format automatically. Save format v16 preserves the new barn and wheat systems. When an old cottage field is resized to 15 spaces, plants are kept where possible; surplus living plants are returned as seeds or ripe produce.
+The game saves into the browser (localStorage) every new morning, and older saves are upgraded to the current format automatically. Save format v18 keeps the kitchen, TV, meal effects, temple and island progress. When an old cottage field is resized to 15 spaces, plants are kept where possible; surplus living plants are returned as seeds or ripe produce.
 You can also save from Settings or choose **Save & title** / **Exit game**, which save before stopping the session. Exit pauses the game and sound; close the browser tab to leave. Cancelling the new-farm form preserves the existing save.
 
 ## 📋 In-game reference tables
@@ -435,7 +513,7 @@ Veins roll daily across five cave floors; deeper floors offer rarer materials. T
 | <img src="docs/readme/icons/tool-rod.webp" alt="" width="32" height="32"> | 5 | Fishing rod | First-person fishing minigame | Carbon rod and bait improve fishing |
 | <img src="docs/readme/icons/tool-axe.webp" alt="" width="32" height="32"> | 6 | Axe | Clear trees, stumps and logs | Ore-based levels clear tougher obstacles |
 | <img src="docs/readme/icons/tool-pick.webp" alt="" width="32" height="32"> | 7 | Pickaxe | Break rocks and mine ore veins | Required levels are listed in the ore table |
-| <img src="docs/readme/icons/tool-ladder.webp" alt="" width="32" height="32"> | — | Rope ladder | Descend to lower cave floors | Buy from the smith or complete an available ore request |
+| <img src="docs/readme/icons/tool-ladder.webp" alt="" width="32" height="32"> | — | Rope ladder | Kept from earlier versions | Still sold by the smith, but no longer needed: cave floors now open by level |
 | <img src="docs/readme/icons/tool-lamp.webp" alt="" width="32" height="32"> | — | Path lamp | Light outdoor paths at night | Buy and place from the journal’s Notes category |
 | <img src="docs/readme/icons/tool-bag.webp" alt="" width="32" height="32"> | — | Bag | Carry different item types in slots | 15 initial slots; expandable to 150 |
 
@@ -472,6 +550,8 @@ Bait multipliers change rare fish selection weights, not a guaranteed catch rate
 - [x] Separate scenery objects and matching ground art on nine outdoor maps
 - [x] Connected roads: loop routes between maps, with road ends that line up on both sides
 - [x] English and Thai
+- [x] Home cooking with 20 recipes, kitchen and TV upgrades
+- [x] Wat Doi Saeng Dao and Starwake Island
 - [ ] Lanna art and sound: mostly done
 
 **Still to do**
