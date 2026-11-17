@@ -54,9 +54,21 @@ The game is in English by default and can be switched to Thai at any time.
 > Every picture on this page is taken from the real game. Some were staged first (crops already planted, animals already bought) so one picture can show a whole system.
 
 > Screenshots and features describe the current development build. This update publishes documentation and screenshots only; the newer gameplay implementation is not included.
-> Kitchen, TV, temple, viharn and island screenshots were captured from the running game on 16 November 2026, as were the farm, greenhouse, wheat, barn, pig and night-lighting screenshots. Other images show unchanged systems. Table icons use the actual in-game item artwork.
+> Kitchen, TV, temple, viharn and island screenshots were captured from the running game on 16 November 2026, as were the farm, greenhouse, wheat, barn, pig and night-lighting screenshots. The four-season village screenshots were captured from the web build on 17 November 2026. Other images show unchanged systems. Table icons use the actual in-game item artwork.
 
 ## 🆕 Latest additions
+
+- **Scenery that changes with the season:** all 13 outdoor maps have their own painting for autumn, winter and spring, and summer keeps the original. Ground, trees, bushes and rocks change together: orange leaves in autumn, snow on roofs and paths in winter, blossom in spring. Each season's pictures load only when you reach that map.
+- **Web build for game sites:** `npm run build` now makes a `dist` folder that runs from any web address, including a subfolder. Zip what is inside `dist` (with `index.html` at the top) and upload it to a site such as itch.io as an HTML game. The first load is about 19 MB; each map's pictures load when you travel there.
+
+<table>
+  <tr><td width="50%"><img src="docs/readme/season-village-summer.webp" alt="Summer: the original painting of Wiang Kham Village"></td><td width="50%"><img src="docs/readme/season-village-autumn.webp" alt="Autumn: orange and red leaves"></td></tr>
+  <tr><td align="center">Summer: the original painting of Wiang Kham Village</td><td align="center">Autumn: orange and red leaves</td></tr>
+  <tr><td width="50%"><img src="docs/readme/season-village-winter.webp" alt="Winter: snow on roofs, paths and riverbanks"></td><td width="50%"><img src="docs/readme/season-village-spring.webp" alt="Spring: pink and white blossom"></td></tr>
+  <tr><td align="center">Winter: snow on roofs, paths and riverbanks</td><td align="center">Spring: pink and white blossom</td></tr>
+</table>
+
+**Mid-November**
 
 - **Home cooking with exact ingredients:** the cottage stove has 20 recipes over four kitchen levels. Each recipe names the exact fish, vegetable, fruit, egg or milk it needs (tilapia, not "any fish"; duck eggs, not chicken eggs). Meals restore energy, and many also give Strength, Luck or extra max energy until the next dawn. See [Cooking, kitchen and TV](#-cooking-kitchen-and-tv).
 - **Upgradable kitchen and TV:** both upgrades ask for a level, money and named ores. The window lists each ore with what you have and what you need. A better TV forecasts tomorrow's weather more accurately: 50% → 75% → 100%.
@@ -102,6 +114,8 @@ Other commands
 | `npm run typecheck` | Checks types with TypeScript |
 | `npm run build` | Checks types, then builds the files to publish into `dist` |
 | `npm run preview` | Serves the built files |
+
+To publish on a game site, zip the contents of `dist` so that `index.html` sits at the top of the zip, then upload it as a browser (HTML) game. Saves stay in each player's browser.
 
 This version is for a desktop browser with a keyboard. Mouse and touch input are disabled.
 
@@ -175,7 +189,7 @@ Keyboard controls cover gameplay, menus, shops, pages, puzzles and fishing. Mous
 
 - **30 crops.** Hoe a square, sow seeds, then water it on each growing day. The cottage field has 15 larger planting spaces in five columns of three, with aisles between columns. Seeds are sold at the seed shop in Wiang Kham Market.
 - **Four visible stages.** Newly sown seeds remain visible before becoming seedlings, immature plants and fully grown crops. Growth advances on watered days. Wheat takes six watered days and grows in winter, spring and summer.
-- **4 seasons.** Summer → autumn → winter → spring, 14 days each (56 days a year). Crops that cannot stand the new season wither, and the game warns you 3 days ahead.
+- **4 seasons.** Summer → autumn → winter → spring, 14 days each (56 days a year). Every outdoor map is repainted for each season. Crops that cannot stand the new season wither, and the game warns you 3 days ahead.
 - **5 kinds of weather.** Sunny, rain, heatwave, storm and snow, always with a forecast for tomorrow. Rain waters the field for you, a storm can wilt plants and a heatwave makes every job more tiring.
 - **Day and night.** The sky darkens with the clock. Building front lanterns and player-placed lamps light up from 18:00 to 05:59.
 - **Refill the watering can.** A fill waters 10 times (20 with the copper can). The blue bar below the can shows its water level. Select the can at the farm pond, lake, shore or greenhouse basin to refill it.
@@ -552,11 +566,12 @@ Bait multipliers change rare fish selection weights, not a guaranteed catch rate
 - [x] English and Thai
 - [x] Home cooking with 20 recipes, kitchen and TV upgrades
 - [x] Wat Doi Saeng Dao and Starwake Island
+- [x] Seasonal scenery on all 13 outdoor maps
+- [x] Web build that runs from any folder (ready for itch.io)
 - [ ] Lanna art and sound: mostly done
 
 **Still to do**
 
-- [ ] Seasonal scenery (the farm uses one picture in every season)
 - [ ] Mobile controls and PWA installation (deferred)
 
 ## 🧰 About the `.claude/skills` folder
